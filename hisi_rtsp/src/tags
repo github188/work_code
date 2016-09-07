@@ -1,0 +1,400 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALIGN_BACK	hisi/common/sample_comm.h	60;"	d
+AddClient	rtspservice.c	/^void AddClient(RTSP_buffer **ppRtspList, int fd)$/;"	f
+CreateSurfaceByBitMap	hisi/common/loadbmp.c	/^HI_S32 CreateSurfaceByBitMap(const HI_CHAR *pszFileName, OSD_SURFACE_S *pstSurface, HI_U8 *pu8Virt)$/;"	f
+D1_WIDTH	hisi/common/sample_comm.h	72;"	d
+DEV_ATTR_7441_BT1120_1080P	hisi/common/sample_comm_vi.c	/^VI_DEV_ATTR_S DEV_ATTR_7441_BT1120_1080P =$/;"	v
+DEV_ATTR_7441_BT1120_720P	hisi/common/sample_comm_vi.c	/^VI_DEV_ATTR_S DEV_ATTR_7441_BT1120_720P =$/;"	v
+DEV_ATTR_7441_INTERLEAVED_720P	hisi/common/sample_comm_vi.c	/^VI_DEV_ATTR_S DEV_ATTR_7441_INTERLEAVED_720P =$/;"	v
+DEV_ATTR_BT656D1_1MUX	hisi/common/sample_comm_vi.c	/^VI_DEV_ATTR_S DEV_ATTR_BT656D1_1MUX =$/;"	v
+DEV_ATTR_BT656D1_2MUX	hisi/common/sample_comm_vi.c	/^VI_DEV_ATTR_S DEV_ATTR_BT656D1_2MUX =$/;"	v
+DEV_ATTR_BT656D1_4MUX	hisi/common/sample_comm_vi.c	/^VI_DEV_ATTR_S DEV_ATTR_BT656D1_4MUX =$/;"	v
+EventLoop	rtspservice.c	/^void EventLoop(int s32MainFd)$/;"	f
+GetBmpInfo	hisi/common/loadbmp.c	/^HI_S32 GetBmpInfo(const char *filename,     OSD_BITMAPFILEHEADER  *pBmpFileHeader$/;"	f
+GetExtName	hisi/common/loadbmp.c	/^char * GetExtName(char * filename)$/;"	f
+GetSdpDescr	rtspservice.c	/^void GetSdpDescr(RTSP_buffer * pRtsp, char *pDescr, char *s8Str)$/;"	f
+GetSdpId	rtspservice.c	/^char *GetSdpId(char *buffer)$/;"	f
+HisiPutH264DataToBuffer	ringfifo.c	/^HI_S32 HisiPutH264DataToBuffer(int ch,VENC_STREAM_S *pstStream)$/;"	f
+HndRtp	rtputils.c	/^} StRtpObj, *HndRtp;$/;"	t	typeref:struct:_tagStRtpHandle	file:
+IntHandl	rtspservice.c	/^void IntHandl(int i)$/;"	f
+LoadBMP	hisi/common/loadbmp.c	/^int LoadBMP(const char *filename, OSD_LOGO_T *pVideoLogo)$/;"	f
+LoadBMPEx	hisi/common/loadbmp.c	/^int LoadBMPEx(const char *filename, OSD_LOGO_T *pVideoLogo, OSD_COLOR_FMT_E enFmt)$/;"	f
+LoadBitMap2Surface	hisi/common/loadbmp.c	/^HI_S32 LoadBitMap2Surface(const HI_CHAR *pszFileName, const OSD_SURFACE_S *pstSurface, HI_U8 *pu8Virt)$/;"	f
+LoadImage	hisi/common/loadbmp.c	/^int LoadImage(const char *filename, OSD_LOGO_T *pVideoLogo)$/;"	f
+LoadImageEx	hisi/common/loadbmp.c	/^int LoadImageEx(const char *filename, OSD_LOGO_T *pVideoLogo, OSD_COLOR_FMT_E enFmt)$/;"	f
+MAX_SIZE	rtspservice.c	34;"	d	file:
+NMAX	ringfifo.c	12;"	d	file:
+OSD_BITMAPFILEHEADER	hisi/common/loadbmp.h	/^} OSD_BITMAPFILEHEADER; $/;"	t	typeref:struct:tag_OSD_BITMAPFILEHEADER
+OSD_BITMAPINFO	hisi/common/loadbmp.h	/^} OSD_BITMAPINFO;$/;"	t	typeref:struct:tag_OSD_BITMAPINFO
+OSD_BITMAPINFOHEADER	hisi/common/loadbmp.h	/^} OSD_BITMAPINFOHEADER;$/;"	t	typeref:struct:tag_OSD_BITMAPINFOHEADER
+OSD_COLOR_FMT_BUTT	hisi/common/loadbmp.h	/^    OSD_COLOR_FMT_BUTT$/;"	e	enum:hiOSD_COLOR_FMT_E
+OSD_COLOR_FMT_E	hisi/common/loadbmp.h	/^}OSD_COLOR_FMT_E;$/;"	t	typeref:enum:hiOSD_COLOR_FMT_E
+OSD_COLOR_FMT_RGB1555	hisi/common/loadbmp.h	/^    OSD_COLOR_FMT_RGB1555   = 4,$/;"	e	enum:hiOSD_COLOR_FMT_E
+OSD_COLOR_FMT_RGB444	hisi/common/loadbmp.h	/^    OSD_COLOR_FMT_RGB444    = 0,$/;"	e	enum:hiOSD_COLOR_FMT_E
+OSD_COLOR_FMT_RGB4444	hisi/common/loadbmp.h	/^    OSD_COLOR_FMT_RGB4444   = 1,$/;"	e	enum:hiOSD_COLOR_FMT_E
+OSD_COLOR_FMT_RGB555	hisi/common/loadbmp.h	/^    OSD_COLOR_FMT_RGB555    = 2,$/;"	e	enum:hiOSD_COLOR_FMT_E
+OSD_COLOR_FMT_RGB565	hisi/common/loadbmp.h	/^    OSD_COLOR_FMT_RGB565    = 3,$/;"	e	enum:hiOSD_COLOR_FMT_E
+OSD_COLOR_FMT_RGB888	hisi/common/loadbmp.h	/^    OSD_COLOR_FMT_RGB888    = 6,$/;"	e	enum:hiOSD_COLOR_FMT_E
+OSD_COLOR_FMT_RGB8888	hisi/common/loadbmp.h	/^    OSD_COLOR_FMT_RGB8888   = 7,$/;"	e	enum:hiOSD_COLOR_FMT_E
+OSD_COMP_INFO	hisi/common/loadbmp.h	/^}OSD_COMP_INFO;$/;"	t	typeref:struct:hiOSD_COMPONENT_INFO_S
+OSD_LOGO_T	hisi/common/loadbmp.h	/^}OSD_LOGO_T;$/;"	t	typeref:struct:tag_OSD_Logo
+OSD_MAKECOLOR_U16	hisi/common/loadbmp.c	/^inline HI_U16 OSD_MAKECOLOR_U16(HI_U8 r, HI_U8 g, HI_U8 b, OSD_COMP_INFO compinfo)$/;"	f
+OSD_RGBQUAD	hisi/common/loadbmp.h	/^} OSD_RGBQUAD;$/;"	t	typeref:struct:tag_OSD_RGBQUAD
+OSD_RGB_S	hisi/common/loadbmp.h	/^}OSD_RGB_S;$/;"	t	typeref:struct:hiOSD_RGB_S
+OSD_SURFACE_S	hisi/common/loadbmp.h	/^}OSD_SURFACE_S;$/;"	t	typeref:struct:hiOSD_SURFACE_S
+ParseUrl	rtspservice.c	/^int ParseUrl(const char *pUrl, char *pServer, unsigned short *port, char *pFileName, size_t FileNameLen)$/;"	f
+Pid	hisi/common/sample_comm.h	/^    pthread_t Pid;$/;"	m	struct:sample_video_loss_s
+PrefsInit	rtspservice.c	/^void PrefsInit()$/;"	f
+RGN_CHANGE_TYPE_BGALPHA	hisi/common/sample_comm.h	/^    RGN_CHANGE_TYPE_BGALPHA,$/;"	e	enum:sample_rgn_change_type_e
+RGN_CHANGE_TYPE_FGALPHA	hisi/common/sample_comm.h	/^    RGN_CHANGE_TYPE_FGALPHA = 0,$/;"	e	enum:sample_rgn_change_type_e
+RGN_CHANGE_TYPE_LAYER	hisi/common/sample_comm.h	/^    RGN_CHANGE_TYPE_LAYER$/;"	e	enum:sample_rgn_change_type_e
+RTP_get_port_pair	rtspservice.c	/^int RTP_get_port_pair(int ch,port_pair *pair)$/;"	f
+RTP_port_pool_init	rtspservice.c	/^void RTP_port_pool_init(int ch,int port)$/;"	f
+RTSP_RTP_AVP	rtspservice.c	36;"	d	file:
+RTSP_describe	rtspservice.c	/^int RTSP_describe(RTSP_buffer * pRtsp)$/;"	f
+RTSP_discard_msg	rtspservice.c	/^void RTSP_discard_msg(RTSP_buffer * rtsp)$/;"	f
+RTSP_full_msg_rcvd	rtspservice.c	/^int RTSP_full_msg_rcvd(RTSP_buffer *rtsp, int *hdr_len, int *body_len)$/;"	f
+RTSP_handler	rtspservice.c	/^int RTSP_handler(RTSP_buffer *pRtspBuf)$/;"	f
+RTSP_initserver	rtspservice.c	/^void RTSP_initserver(RTSP_buffer *rtsp, int fd)$/;"	f
+RTSP_options	rtspservice.c	/^int RTSP_options(RTSP_buffer * pRtsp)$/;"	f
+RTSP_play	rtspservice.c	/^int RTSP_play(RTSP_buffer * pRtsp)$/;"	f
+RTSP_remove_msg	rtspservice.c	/^void RTSP_remove_msg(int len, RTSP_buffer * rtsp)$/;"	f
+RTSP_setup	rtspservice.c	/^int RTSP_setup(RTSP_buffer * pRtsp)$/;"	f
+RTSP_state_machine	rtspservice.c	/^void RTSP_state_machine(RTSP_buffer * pRtspBuf, int method)$/;"	f
+RTSP_teardown	rtspservice.c	/^int RTSP_teardown(RTSP_buffer * pRtsp)$/;"	f
+RTSP_valid_response_msg	rtspservice.c	/^int RTSP_valid_response_msg(unsigned short *status, RTSP_buffer * rtsp)$/;"	f
+RTSP_validate_method	rtspservice.c	/^int RTSP_validate_method(RTSP_buffer * pRtsp)$/;"	f
+RtpCreate	rtputils.c	/^unsigned int RtpCreate(unsigned int u32IP, int s32Port, EmRtpPayload emPayload)$/;"	f
+RtpDelete	rtputils.c	/^void RtpDelete(unsigned int u32Rtp)$/;"	f
+RtpSend	rtputils.c	/^unsigned int RtpSend(unsigned int u32Rtp, char *pData, int s32DataSize, unsigned int u32TimeStamp)$/;"	f
+RtspServer	rtspservice.c	/^int RtspServer(RTSP_buffer *rtsp)$/;"	f
+SAMPLE_AUDIO_HDMI_AO_DEV	hisi/common/sample_comm.h	108;"	d
+SAMPLE_AUDIO_HDMI_AO_DEV	hisi/common/sample_comm.h	110;"	d
+SAMPLE_COMM_DisableVpssPreScale	hisi/common/sample_comm_vpss.c	/^HI_S32 SAMPLE_COMM_DisableVpssPreScale(VPSS_GRP VpssGrp,SIZE_S stSize)$/;"	f
+SAMPLE_COMM_EnableVpssPreScale	hisi/common/sample_comm_vpss.c	/^HI_S32 SAMPLE_COMM_EnableVpssPreScale(VPSS_GRP VpssGrp,SIZE_S stSize)$/;"	f
+SAMPLE_COMM_SYS_CalcHistVbBlkSize	hisi/common/sample_comm_sys.c	/^HI_U32 SAMPLE_COMM_SYS_CalcHistVbBlkSize(VIDEO_NORM_E enNorm, PIC_SIZE_E enPicSize, SIZE_S *pstHistBlkSize, HI_U32 u32AlignWidth)$/;"	f
+SAMPLE_COMM_SYS_CalcPicVbBlkSize	hisi/common/sample_comm_sys.c	/^HI_U32 SAMPLE_COMM_SYS_CalcPicVbBlkSize(VIDEO_NORM_E enNorm, PIC_SIZE_E enPicSize, PIXEL_FORMAT_E enPixFmt, HI_U32 u32AlignWidth)$/;"	f
+SAMPLE_COMM_SYS_Exit	hisi/common/sample_comm_sys.c	/^HI_VOID SAMPLE_COMM_SYS_Exit(void)$/;"	f
+SAMPLE_COMM_SYS_GetPicSize	hisi/common/sample_comm_sys.c	/^HI_S32 SAMPLE_COMM_SYS_GetPicSize(VIDEO_NORM_E enNorm, PIC_SIZE_E enPicSize, SIZE_S *pstSize)$/;"	f
+SAMPLE_COMM_SYS_Init	hisi/common/sample_comm_sys.c	/^HI_S32 SAMPLE_COMM_SYS_Init(VB_CONF_S *pstVbConf)$/;"	f
+SAMPLE_COMM_SYS_MemConfig	hisi/common/sample_comm_sys.c	/^HI_S32 SAMPLE_COMM_SYS_MemConfig(HI_VOID)$/;"	f
+SAMPLE_COMM_SYS_Payload2FilePostfix	hisi/common/sample_comm_sys.c	/^HI_S32 SAMPLE_COMM_SYS_Payload2FilePostfix(PAYLOAD_TYPE_E enPayload, HI_CHAR* szFilePostfix)$/;"	f
+SAMPLE_COMM_VENC_BindVpss	hisi/common/sample_comm_venc.c	/^HI_S32 SAMPLE_COMM_VENC_BindVpss(VENC_GRP GrpChn,VPSS_GRP VpssGrp,VPSS_CHN VpssChn)$/;"	f
+SAMPLE_COMM_VENC_GetFilePostfix	hisi/common/sample_comm_venc.c	/^HI_S32 SAMPLE_COMM_VENC_GetFilePostfix(PAYLOAD_TYPE_E enPayload, char *szFilePostfix)$/;"	f
+SAMPLE_COMM_VENC_GetVencStreamProc	hisi/common/sample_comm_venc.c	/^HI_VOID* SAMPLE_COMM_VENC_GetVencStreamProc(HI_VOID *p)$/;"	f
+SAMPLE_COMM_VENC_MemConfig	hisi/common/sample_comm_venc.c	/^HI_S32 SAMPLE_COMM_VENC_MemConfig(HI_VOID)$/;"	f
+SAMPLE_COMM_VENC_PlanToSemi	hisi/common/sample_comm_venc.c	/^HI_S32 SAMPLE_COMM_VENC_PlanToSemi(HI_U8 *pY, HI_S32 yStride, $/;"	f
+SAMPLE_COMM_VENC_ReadOneFrame	hisi/common/sample_comm_venc.c	/^HI_VOID SAMPLE_COMM_VENC_ReadOneFrame( FILE * fp, HI_U8 * pY, HI_U8 * pU, HI_U8 * pV,$/;"	f
+SAMPLE_COMM_VENC_SaveH264	hisi/common/sample_comm_venc.c	/^HI_S32 SAMPLE_COMM_VENC_SaveH264(FILE* fpH264File, VENC_STREAM_S *pstStream)$/;"	f
+SAMPLE_COMM_VENC_SaveJPEG	hisi/common/sample_comm_venc.c	/^HI_S32 SAMPLE_COMM_VENC_SaveJPEG(FILE *fpJpegFile, VENC_STREAM_S *pstStream)$/;"	f
+SAMPLE_COMM_VENC_SaveMJpeg	hisi/common/sample_comm_venc.c	/^HI_S32 SAMPLE_COMM_VENC_SaveMJpeg(FILE* fpJpegFile, VENC_STREAM_S *pstStream)$/;"	f
+SAMPLE_COMM_VENC_SaveSnap	hisi/common/sample_comm_venc.c	/^HI_S32 SAMPLE_COMM_VENC_SaveSnap(VENC_STREAM_S *pstStream)$/;"	f
+SAMPLE_COMM_VENC_SaveStream	hisi/common/sample_comm_venc.c	/^HI_S32 SAMPLE_COMM_VENC_SaveStream(PAYLOAD_TYPE_E enType,FILE *pFd, VENC_STREAM_S *pstStream)$/;"	f
+SAMPLE_COMM_VENC_SnapProcess	hisi/common/sample_comm_venc.c	/^HI_S32 SAMPLE_COMM_VENC_SnapProcess(VENC_GRP VencGrp, VENC_CHN VencChn, VPSS_GRP VpssGrp, VPSS_CHN VpssChn)$/;"	f
+SAMPLE_COMM_VENC_SnapStart	hisi/common/sample_comm_venc.c	/^HI_S32 SAMPLE_COMM_VENC_SnapStart(VENC_GRP VencGrp,VENC_CHN VencChn, SIZE_S *pstSize)$/;"	f
+SAMPLE_COMM_VENC_SnapStop	hisi/common/sample_comm_venc.c	/^HI_S32 SAMPLE_COMM_VENC_SnapStop(VENC_GRP VencGrp,VENC_CHN VencChn)$/;"	f
+SAMPLE_COMM_VENC_Start	hisi/common/sample_comm_venc.c	/^HI_S32 SAMPLE_COMM_VENC_Start(VENC_GRP VencGrp,VENC_CHN VencChn, PAYLOAD_TYPE_E enType, VIDEO_NORM_E enNorm, PIC_SIZE_E enSize, SAMPLE_RC_E enRcMode)$/;"	f
+SAMPLE_COMM_VENC_StartGetStream	hisi/common/sample_comm_venc.c	/^HI_S32 SAMPLE_COMM_VENC_StartGetStream(HI_S32 s32Cnt)$/;"	f
+SAMPLE_COMM_VENC_Stop	hisi/common/sample_comm_venc.c	/^HI_S32 SAMPLE_COMM_VENC_Stop(VENC_GRP VencGrp,VENC_CHN VencChn)$/;"	f
+SAMPLE_COMM_VENC_StopGetStream	hisi/common/sample_comm_venc.c	/^HI_S32 SAMPLE_COMM_VENC_StopGetStream()$/;"	f
+SAMPLE_COMM_VENC_UnBindVpss	hisi/common/sample_comm_venc.c	/^HI_S32 SAMPLE_COMM_VENC_UnBindVpss(VENC_GRP GrpChn,VPSS_GRP VpssGrp,VPSS_CHN VpssChn)$/;"	f
+SAMPLE_COMM_VI_ADStart	hisi/common/sample_comm_vi.c	/^HI_S32 SAMPLE_COMM_VI_ADStart(SAMPLE_VI_MODE_E enViMode, VIDEO_NORM_E enNorm)$/;"	f
+SAMPLE_COMM_VI_BindVpss	hisi/common/sample_comm_vi.c	/^HI_S32 SAMPLE_COMM_VI_BindVpss(SAMPLE_VI_MODE_E enViMode)$/;"	f
+SAMPLE_COMM_VI_ChangeCapSize	hisi/common/sample_comm_vi.c	/^HI_S32 SAMPLE_COMM_VI_ChangeCapSize(VI_CHN ViChn, HI_U32 u32CapWidth, HI_U32 u32CapHeight,HI_U32 u32Width, HI_U32 u32Height)$/;"	f
+SAMPLE_COMM_VI_ChangeDestSize	hisi/common/sample_comm_vi.c	/^HI_S32 SAMPLE_COMM_VI_ChangeDestSize(VI_CHN ViChn, HI_U32 u32Width, HI_U32 u32Height)$/;"	f
+SAMPLE_COMM_VI_ChangeMixCap	hisi/common/sample_comm_vi.c	/^HI_S32 SAMPLE_COMM_VI_ChangeMixCap(VI_CHN ViChn,HI_BOOL bMixCap,HI_U32 FrameRate)$/;"	f
+SAMPLE_COMM_VI_GetDev	hisi/common/sample_comm_vi.c	/^VI_DEV SAMPLE_COMM_VI_GetDev(SAMPLE_VI_MODE_E enViMode, VI_CHN ViChn)$/;"	f
+SAMPLE_COMM_VI_GetSubChn	hisi/common/sample_comm.h	64;"	d
+SAMPLE_COMM_VI_GetSubChnSize	hisi/common/sample_comm_vi.c	/^HI_S32 SAMPLE_COMM_VI_GetSubChnSize(VI_CHN ViChn_Sub, VIDEO_NORM_E enNorm, SIZE_S *pstSize)$/;"	f
+SAMPLE_COMM_VI_GetVFrameFromYUV	hisi/common/sample_comm_vi.c	/^HI_S32 SAMPLE_COMM_VI_GetVFrameFromYUV(FILE *pYUVFile, HI_U32 u32Width, HI_U32 u32Height,HI_U32 u32Stride, VIDEO_FRAME_INFO_S *pstVFrameInfo)$/;"	f
+SAMPLE_COMM_VI_IsHd	hisi/common/sample_comm_vi.c	/^HI_BOOL SAMPLE_COMM_VI_IsHd(SAMPLE_VI_MODE_E enViMode)$/;"	f
+SAMPLE_COMM_VI_MemConfig	hisi/common/sample_comm_vi.c	/^HI_S32 SAMPLE_COMM_VI_MemConfig(SAMPLE_VI_MODE_E enViMode)$/;"	f
+SAMPLE_COMM_VI_MixCap_Start	hisi/common/sample_comm_vi.c	/^HI_S32 SAMPLE_COMM_VI_MixCap_Start(SAMPLE_VI_MODE_E enViMode, VIDEO_NORM_E enNorm)$/;"	f
+SAMPLE_COMM_VI_Mode2Param	hisi/common/sample_comm_vi.c	/^HI_S32 SAMPLE_COMM_VI_Mode2Param(SAMPLE_VI_MODE_E enViMode, SAMPLE_VI_PARAM_S *pstViParam)$/;"	f
+SAMPLE_COMM_VI_Mode2Size	hisi/common/sample_comm_vi.c	/^HI_S32 SAMPLE_COMM_VI_Mode2Size(SAMPLE_VI_MODE_E enViMode, VIDEO_NORM_E enNorm, RECT_S *pstCapRect, SIZE_S *pstDestSize)$/;"	f
+SAMPLE_COMM_VI_PlanToSemi	hisi/common/sample_comm_vi.c	/^HI_S32 SAMPLE_COMM_VI_PlanToSemi(HI_U8 *pY, HI_S32 yStride,$/;"	f
+SAMPLE_COMM_VI_ReadFrame	hisi/common/sample_comm_vi.c	/^HI_VOID SAMPLE_COMM_VI_ReadFrame(FILE * fp, HI_U8 * pY, HI_U8 * pU, HI_U8 * pV, HI_U32 width, HI_U32 height, HI_U32 stride, HI_U32 stride2)$/;"	f
+SAMPLE_COMM_VI_SetMask	hisi/common/sample_comm_vi.c	/^HI_VOID SAMPLE_COMM_VI_SetMask(VI_DEV ViDev, VI_DEV_ATTR_S *pstDevAttr)$/;"	f
+SAMPLE_COMM_VI_Start	hisi/common/sample_comm_vi.c	/^HI_S32 SAMPLE_COMM_VI_Start(SAMPLE_VI_MODE_E enViMode, VIDEO_NORM_E enNorm)$/;"	f
+SAMPLE_COMM_VI_StartChn	hisi/common/sample_comm_vi.c	/^HI_S32 SAMPLE_COMM_VI_StartChn(VI_CHN ViChn, RECT_S *pstCapRect, SIZE_S *pstTarSize, $/;"	f
+SAMPLE_COMM_VI_StartDev	hisi/common/sample_comm_vi.c	/^HI_S32 SAMPLE_COMM_VI_StartDev(VI_DEV ViDev, SAMPLE_VI_MODE_E enViMode)$/;"	f
+SAMPLE_COMM_VI_Stop	hisi/common/sample_comm_vi.c	/^HI_S32 SAMPLE_COMM_VI_Stop(SAMPLE_VI_MODE_E enViMode)$/;"	f
+SAMPLE_COMM_VI_UnBindVpss	hisi/common/sample_comm_vi.c	/^HI_S32 SAMPLE_COMM_VI_UnBindVpss(SAMPLE_VI_MODE_E enViMode)$/;"	f
+SAMPLE_COMM_VO_BindVi	hisi/common/sample_comm_vo.c	/^HI_S32 SAMPLE_COMM_VO_BindVi(VO_DEV VoDev, VO_CHN VoChn, VI_CHN ViChn)$/;"	f
+SAMPLE_COMM_VO_BindVoWbc	hisi/common/sample_comm_vo.c	/^HI_S32 SAMPLE_COMM_VO_BindVoWbc(VO_DEV VoWbcDev, VO_DEV VoDev, VO_CHN VoChn)$/;"	f
+SAMPLE_COMM_VO_BindVpss	hisi/common/sample_comm_vo.c	/^HI_S32 SAMPLE_COMM_VO_BindVpss(VO_DEV VoDev,VO_CHN VoChn,VPSS_GRP VpssGrp,VPSS_CHN VpssChn)$/;"	f
+SAMPLE_COMM_VO_GetWH	hisi/common/sample_comm_vo.c	/^HI_S32 SAMPLE_COMM_VO_GetWH(VO_INTF_SYNC_E enIntfSync, HI_U32 *pu32W,HI_U32 *pu32H, HI_U32 *pu32Frm)$/;"	f
+SAMPLE_COMM_VO_HdmiConvertSync	hisi/common/sample_comm_vo.c	/^static HI_VOID SAMPLE_COMM_VO_HdmiConvertSync(VO_INTF_SYNC_E enIntfSync,$/;"	f	file:
+SAMPLE_COMM_VO_HdmiStart	hisi/common/sample_comm_vo.c	/^HI_S32 SAMPLE_COMM_VO_HdmiStart(VO_INTF_SYNC_E enIntfSync)$/;"	f
+SAMPLE_COMM_VO_HdmiStop	hisi/common/sample_comm_vo.c	/^HI_S32 SAMPLE_COMM_VO_HdmiStop(HI_VOID)$/;"	f
+SAMPLE_COMM_VO_MemConfig	hisi/common/sample_comm_vo.c	/^HI_S32 SAMPLE_COMM_VO_MemConfig(VO_DEV VoDev, HI_CHAR *pcMmzName)$/;"	f
+SAMPLE_COMM_VO_StartChn	hisi/common/sample_comm_vo.c	/^HI_S32 SAMPLE_COMM_VO_StartChn(VO_DEV VoDev,VO_PUB_ATTR_S *pstPubAttr,SAMPLE_VO_MODE_E enMode)$/;"	f
+SAMPLE_COMM_VO_StartDevLayer	hisi/common/sample_comm_vo.c	/^HI_S32 SAMPLE_COMM_VO_StartDevLayer(VO_DEV VoDev, VO_PUB_ATTR_S *pstPubAttr, HI_U32 u32SrcFrmRate)$/;"	f
+SAMPLE_COMM_VO_StopChn	hisi/common/sample_comm_vo.c	/^HI_S32 SAMPLE_COMM_VO_StopChn(VO_DEV VoDev,SAMPLE_VO_MODE_E enMode)$/;"	f
+SAMPLE_COMM_VO_StopDevLayer	hisi/common/sample_comm_vo.c	/^HI_S32 SAMPLE_COMM_VO_StopDevLayer(VO_DEV VoDev)$/;"	f
+SAMPLE_COMM_VO_UnBindVi	hisi/common/sample_comm_vo.c	/^HI_S32 SAMPLE_COMM_VO_UnBindVi(VO_DEV VoDev, VO_CHN VoChn)$/;"	f
+SAMPLE_COMM_VO_UnBindVoWbc	hisi/common/sample_comm_vo.c	/^HI_S32 SAMPLE_COMM_VO_UnBindVoWbc(VO_DEV VoDev, VO_CHN VoChn)$/;"	f
+SAMPLE_COMM_VO_UnBindVpss	hisi/common/sample_comm_vo.c	/^HI_S32 SAMPLE_COMM_VO_UnBindVpss(VO_DEV VoDev,VO_CHN VoChn,VPSS_GRP VpssGrp,VPSS_CHN VpssChn)$/;"	f
+SAMPLE_COMM_VPSS_MemConfig	hisi/common/sample_comm_vpss.c	/^HI_S32 SAMPLE_COMM_VPSS_MemConfig()$/;"	f
+SAMPLE_COMM_VPSS_Start	hisi/common/sample_comm_vpss.c	/^HI_S32 SAMPLE_COMM_VPSS_Start(HI_S32 s32GrpCnt, SIZE_S *pstSize, HI_S32 s32ChnCnt,VPSS_GRP_ATTR_S *pstVpssGrpAttr)$/;"	f
+SAMPLE_COMM_VPSS_Stop	hisi/common/sample_comm_vpss.c	/^HI_S32 SAMPLE_COMM_VPSS_Stop(HI_S32 s32GrpCnt, HI_S32 s32ChnCnt)$/;"	f
+SAMPLE_DISABLE	hisi/common/sample_comm.h	104;"	d
+SAMPLE_ENABLE	hisi/common/sample_comm.h	103;"	d
+SAMPLE_MEMBUF_S	hisi/common/sample_comm.h	/^} SAMPLE_MEMBUF_S;$/;"	t	typeref:struct:hisample_MEMBUF_S
+SAMPLE_NOUSE	hisi/common/sample_comm.h	105;"	d
+SAMPLE_PIXEL_FORMAT	hisi/common/sample_comm.h	63;"	d
+SAMPLE_PRT	hisi/common/sample_comm.h	116;"	d
+SAMPLE_RC_CBR	hisi/common/sample_comm.h	/^    SAMPLE_RC_CBR = 0,$/;"	e	enum:sample_rc_e
+SAMPLE_RC_E	hisi/common/sample_comm.h	/^}SAMPLE_RC_E;$/;"	t	typeref:enum:sample_rc_e
+SAMPLE_RC_FIXQP	hisi/common/sample_comm.h	/^    SAMPLE_RC_FIXQP$/;"	e	enum:sample_rc_e
+SAMPLE_RC_VBR	hisi/common/sample_comm.h	/^    SAMPLE_RC_VBR,$/;"	e	enum:sample_rc_e
+SAMPLE_RGN_CHANGE_TYPE_EN	hisi/common/sample_comm.h	/^}SAMPLE_RGN_CHANGE_TYPE_EN;$/;"	t	typeref:enum:sample_rgn_change_type_e
+SAMPLE_SYS_ALIGN_WIDTH	hisi/common/sample_comm.h	62;"	d
+SAMPLE_TW2865_CfgV	hisi/common/sample_comm_vi.c	/^HI_S32 SAMPLE_TW2865_CfgV(VIDEO_NORM_E enVideoMode,VI_WORK_MODE_E enWorkMode)$/;"	f
+SAMPLE_TW2868_CfgV	hisi/common/sample_comm_vi.c	/^HI_S32 SAMPLE_TW2868_CfgV(VIDEO_NORM_E enVideoMode,VI_WORK_MODE_E enWorkMode)$/;"	f
+SAMPLE_TW2960_CfgV	hisi/common/sample_comm_vi.c	/^HI_S32 SAMPLE_TW2960_CfgV(VIDEO_NORM_E enVideoMode,VI_WORK_MODE_E enWorkMode)$/;"	f
+SAMPLE_VENC_4D1_H264	main.c	/^void * SAMPLE_VENC_4D1_H264(void *arg)$/;"	f
+SAMPLE_VENC_GETSTREAM_PARA_S	hisi/common/sample_comm.h	/^}SAMPLE_VENC_GETSTREAM_PARA_S;$/;"	t	typeref:struct:sample_venc_getstream_s
+SAMPLE_VIDEO_LOSS_S	hisi/common/sample_comm.h	/^} SAMPLE_VIDEO_LOSS_S;$/;"	t	typeref:struct:sample_video_loss_s
+SAMPLE_VI_CHN_SET_E	hisi/common/sample_comm.h	/^}SAMPLE_VI_CHN_SET_E;$/;"	t	typeref:enum:sample_vi_chn_set_e
+SAMPLE_VI_DEV_TYPE_E	hisi/common/sample_comm.h	/^}SAMPLE_VI_DEV_TYPE_E;$/;"	t	typeref:enum:__anon5
+SAMPLE_VI_MODE_16_2Cif	hisi/common/sample_comm.h	/^	SAMPLE_VI_MODE_16_2Cif,$/;"	e	enum:sample_vi_mode_e
+SAMPLE_VI_MODE_16_960H	hisi/common/sample_comm.h	/^    SAMPLE_VI_MODE_16_960H,$/;"	e	enum:sample_vi_mode_e
+SAMPLE_VI_MODE_16_Cif	hisi/common/sample_comm.h	/^	SAMPLE_VI_MODE_16_Cif,$/;"	e	enum:sample_vi_mode_e
+SAMPLE_VI_MODE_16_D1	hisi/common/sample_comm.h	/^    SAMPLE_VI_MODE_16_D1,$/;"	e	enum:sample_vi_mode_e
+SAMPLE_VI_MODE_16_D1Cif	hisi/common/sample_comm.h	/^	SAMPLE_VI_MODE_16_D1Cif,$/;"	e	enum:sample_vi_mode_e
+SAMPLE_VI_MODE_1_720P	hisi/common/sample_comm.h	/^	SAMPLE_VI_MODE_1_720P,$/;"	e	enum:sample_vi_mode_e
+SAMPLE_VI_MODE_1_D1	hisi/common/sample_comm.h	/^    SAMPLE_VI_MODE_1_D1 = 0,$/;"	e	enum:sample_vi_mode_e
+SAMPLE_VI_MODE_1_D1Cif	hisi/common/sample_comm.h	/^	SAMPLE_VI_MODE_1_D1Cif,$/;"	e	enum:sample_vi_mode_e
+SAMPLE_VI_MODE_4_1080P	hisi/common/sample_comm.h	/^    SAMPLE_VI_MODE_4_1080P,$/;"	e	enum:sample_vi_mode_e
+SAMPLE_VI_MODE_4_720P	hisi/common/sample_comm.h	/^    SAMPLE_VI_MODE_4_720P,$/;"	e	enum:sample_vi_mode_e
+SAMPLE_VI_MODE_4_D1	hisi/common/sample_comm.h	/^    SAMPLE_VI_MODE_4_D1,$/;"	e	enum:sample_vi_mode_e
+SAMPLE_VI_MODE_8_2Cif	hisi/common/sample_comm.h	/^    SAMPLE_VI_MODE_8_2Cif,$/;"	e	enum:sample_vi_mode_e
+SAMPLE_VI_MODE_8_D1	hisi/common/sample_comm.h	/^	SAMPLE_VI_MODE_8_D1,$/;"	e	enum:sample_vi_mode_e
+SAMPLE_VI_MODE_E	hisi/common/sample_comm.h	/^}SAMPLE_VI_MODE_E;$/;"	t	typeref:enum:sample_vi_mode_e
+SAMPLE_VI_PARAM_S	hisi/common/sample_comm.h	/^}SAMPLE_VI_PARAM_S;$/;"	t	typeref:struct:sample_vi_param_s
+SAMPLE_VI_SUBCHN_2_H	hisi/common/sample_comm.h	77;"	d
+SAMPLE_VI_SUBCHN_2_W	hisi/common/sample_comm.h	76;"	d
+SAMPLE_VO_DEV_DHD0	hisi/common/sample_comm.h	80;"	d
+SAMPLE_VO_DEV_DHD0	hisi/common/sample_comm.h	84;"	d
+SAMPLE_VO_DEV_DHD0	hisi/common/sample_comm.h	88;"	d
+SAMPLE_VO_DEV_DHD1	hisi/common/sample_comm.h	89;"	d
+SAMPLE_VO_DEV_DSD0	hisi/common/sample_comm.h	81;"	d
+SAMPLE_VO_DEV_DSD0	hisi/common/sample_comm.h	85;"	d
+SAMPLE_VO_DEV_DSD0	hisi/common/sample_comm.h	90;"	d
+SAMPLE_VO_DEV_DSD1	hisi/common/sample_comm.h	82;"	d
+SAMPLE_VO_DEV_DSD1	hisi/common/sample_comm.h	86;"	d
+SAMPLE_VO_DEV_DSD1	hisi/common/sample_comm.h	91;"	d
+SAMPLE_VO_DEV_DSD2	hisi/common/sample_comm.h	92;"	d
+SAMPLE_VO_DEV_DSD3	hisi/common/sample_comm.h	93;"	d
+SAMPLE_VO_DEV_DSD4	hisi/common/sample_comm.h	94;"	d
+SAMPLE_VO_DEV_DSD5	hisi/common/sample_comm.h	95;"	d
+SAMPLE_VO_MODE_E	hisi/common/sample_comm.h	/^}SAMPLE_VO_MODE_E;$/;"	t	typeref:enum:sample_vo_mode_e
+SAMPLE_VO_PARAM_S	hisi/common/sample_comm.h	/^}SAMPLE_VO_PARAM_S;$/;"	t	typeref:struct:sample_vo_param_s
+SDP_EL	rtspservice.c	35;"	d	file:
+ScheduleConnections	rtspservice.c	/^void ScheduleConnections(RTSP_buffer **rtsp_list, int *conn_count)$/;"	f
+ScheduleInit	rtsputils.c	/^int ScheduleInit()$/;"	f
+SendDescribeReply	rtspservice.c	/^int SendDescribeReply(RTSP_buffer * rtsp, char *object, char *descr, char *s8Str)$/;"	f
+SendNalu264	rtputils.c	/^static int SendNalu264(HndRtp hRtp, char *pNalBuf, int s32NalBufSize)$/;"	f	file:
+SendNalu711	rtputils.c	/^static int SendNalu711(HndRtp hRtp, char *buf, int bufsize)$/;"	f	file:
+StFuHdr	rtputils.c	/^} StFuHdr; $/;"	t	typeref:struct:__anon4	file:
+StFuIndicator	rtputils.c	/^} StFuIndicator; $/;"	t	typeref:struct:__anon3	file:
+StNaluHdr	rtputils.c	/^} StNaluHdr; $/;"	t	typeref:struct:__anon2	file:
+StRtpFixedHdr	rtputils.c	/^} StRtpFixedHdr;$/;"	t	typeref:struct:__anon1	file:
+StRtpObj	rtputils.c	/^} StRtpObj, *HndRtp;$/;"	t	typeref:struct:_tagStRtpHandle	file:
+TLV320_FILE	hisi/common/sample_comm.h	70;"	d
+TW2865_FILE	hisi/common/sample_comm.h	67;"	d
+TW2868_FILE	hisi/common/sample_comm.h	68;"	d
+TW2960_FILE	hisi/common/sample_comm.h	69;"	d
+UpdatePps	rtspservice.c	/^void UpdatePps(int ch,unsigned char *data,int len)$/;"	f
+UpdateSps	rtspservice.c	/^void UpdateSps(int ch,unsigned char *data,int len)$/;"	f
+VI_CHN_SET_FILP	hisi/common/sample_comm.h	/^    VI_CHN_SET_FILP		\/* open filp *\/$/;"	e	enum:sample_vi_chn_set_e
+VI_CHN_SET_MIRROR	hisi/common/sample_comm.h	/^    VI_CHN_SET_MIRROR,      \/* open MIRROR *\/$/;"	e	enum:sample_vi_chn_set_e
+VI_CHN_SET_NORMAL	hisi/common/sample_comm.h	/^    VI_CHN_SET_NORMAL = 0, \/* mirror, filp close *\/$/;"	e	enum:sample_vi_chn_set_e
+VI_DEV_1080P_HD_1MUX	hisi/common/sample_comm.h	/^    VI_DEV_1080P_HD_1MUX,$/;"	e	enum:__anon5
+VI_DEV_720P_HD_1MUX	hisi/common/sample_comm.h	/^    VI_DEV_720P_HD_1MUX,$/;"	e	enum:__anon5
+VI_DEV_BT656_960H_1MUX	hisi/common/sample_comm.h	/^    VI_DEV_BT656_960H_1MUX,$/;"	e	enum:__anon5
+VI_DEV_BT656_960H_4MUX	hisi/common/sample_comm.h	/^    VI_DEV_BT656_960H_4MUX,$/;"	e	enum:__anon5
+VI_DEV_BT656_D1_1MUX	hisi/common/sample_comm.h	/^    VI_DEV_BT656_D1_1MUX = 0,$/;"	e	enum:__anon5
+VI_DEV_BT656_D1_4MUX	hisi/common/sample_comm.h	/^    VI_DEV_BT656_D1_4MUX,$/;"	e	enum:__anon5
+VI_DEV_BUTT	hisi/common/sample_comm.h	/^    VI_DEV_BUTT$/;"	e	enum:__anon5
+VO_MODE_16MUX	hisi/common/sample_comm.h	/^    VO_MODE_16MUX = 3,$/;"	e	enum:sample_vo_mode_e
+VO_MODE_1MUX	hisi/common/sample_comm.h	/^    VO_MODE_1MUX  = 0,$/;"	e	enum:sample_vo_mode_e
+VO_MODE_4MUX	hisi/common/sample_comm.h	/^    VO_MODE_4MUX = 1,$/;"	e	enum:sample_vo_mode_e
+VO_MODE_9MUX	hisi/common/sample_comm.h	/^    VO_MODE_9MUX = 2,$/;"	e	enum:sample_vo_mode_e
+VO_MODE_BUTT	hisi/common/sample_comm.h	/^    VO_MODE_BUTT$/;"	e	enum:sample_vo_mode_e
+VoDev	hisi/common/sample_comm.h	/^    VO_DEV VoDev;$/;"	m	struct:sample_vo_param_s
+__LOAD_BMP_H__	hisi/common/loadbmp.h	2;"	d
+__SAMPLE_COMM_H__	hisi/common/sample_comm.h	10;"	d
+_tagStRtpHandle	rtputils.c	/^typedef struct _tagStRtpHandle$/;"	s	file:
+acMmzName	hisi/common/sample_comm.h	/^    HI_CHAR acMmzName[20];$/;"	m	struct:sample_vo_param_s
+add_time_stamp	rtspservice.c	/^void add_time_stamp(char *b, int crlf)$/;"	f
+addring	ringfifo.c	/^int addring(int i)$/;"	f
+alen	hisi/common/loadbmp.h	/^    int alen;$/;"	m	struct:hiOSD_COMPONENT_INFO_S
+bStart	hisi/common/sample_comm.h	/^    HI_BOOL bStart;$/;"	m	struct:sample_video_loss_s
+bThreadStart	hisi/common/sample_comm.h	/^     HI_BOOL bThreadStart;$/;"	m	struct:sample_venc_getstream_s
+bVpssBind	hisi/common/sample_comm.h	/^    HI_BOOL bVpssBind;$/;"	m	struct:sample_vo_param_s
+base64_encode	rtspservice.c	/^char * base64_encode(const unsigned char * bindata, char * base64, int binlength)$/;"	f
+base64_encode2	rtspservice.c	/^void base64_encode2(char *in, const int in_len, char *out, int out_len)$/;"	f
+base64pps	rtspservice.c	/^	char base64pps[524];$/;"	m	struct:profileid_sps_pps	file:
+base64profileid	rtspservice.c	/^	char base64profileid[10];$/;"	m	struct:profileid_sps_pps	file:
+base64sps	rtspservice.c	/^	char base64sps[524];$/;"	m	struct:profileid_sps_pps	file:
+bfOffBits	hisi/common/loadbmp.h	/^        HI_U32   bfOffBits;$/;"	m	struct:tag_OSD_BITMAPFILEHEADER
+bfReserved1	hisi/common/loadbmp.h	/^        HI_U16    bfReserved1;$/;"	m	struct:tag_OSD_BITMAPFILEHEADER
+bfReserved2	hisi/common/loadbmp.h	/^        HI_U16    bfReserved2;$/;"	m	struct:tag_OSD_BITMAPFILEHEADER
+bfSize	hisi/common/loadbmp.h	/^        HI_U32   bfSize;$/;"	m	struct:tag_OSD_BITMAPFILEHEADER
+biBitCount	hisi/common/loadbmp.h	/^        HI_U16       biBitCount;$/;"	m	struct:tag_OSD_BITMAPINFOHEADER
+biClrImportant	hisi/common/loadbmp.h	/^        HI_U32      biClrImportant;$/;"	m	struct:tag_OSD_BITMAPINFOHEADER
+biClrUsed	hisi/common/loadbmp.h	/^        HI_U32      biClrUsed;$/;"	m	struct:tag_OSD_BITMAPINFOHEADER
+biCompression	hisi/common/loadbmp.h	/^        HI_U32      biCompression;$/;"	m	struct:tag_OSD_BITMAPINFOHEADER
+biHeight	hisi/common/loadbmp.h	/^        HI_S32       biHeight;$/;"	m	struct:tag_OSD_BITMAPINFOHEADER
+biPlanes	hisi/common/loadbmp.h	/^        HI_U16       biPlanes;$/;"	m	struct:tag_OSD_BITMAPINFOHEADER
+biSize	hisi/common/loadbmp.h	/^        HI_U16      biSize;$/;"	m	struct:tag_OSD_BITMAPINFOHEADER
+biSizeImage	hisi/common/loadbmp.h	/^        HI_U32      biSizeImage;$/;"	m	struct:tag_OSD_BITMAPINFOHEADER
+biWidth	hisi/common/loadbmp.h	/^        HI_U32       biWidth;$/;"	m	struct:tag_OSD_BITMAPINFOHEADER
+biXPelsPerMeter	hisi/common/loadbmp.h	/^        HI_U32       biXPelsPerMeter;$/;"	m	struct:tag_OSD_BITMAPINFOHEADER
+biYPelsPerMeter	hisi/common/loadbmp.h	/^        HI_U32       biYPelsPerMeter;$/;"	m	struct:tag_OSD_BITMAPINFOHEADER
+blen	hisi/common/loadbmp.h	/^    int blen;$/;"	m	struct:hiOSD_COMPONENT_INFO_S
+bmiColors	hisi/common/loadbmp.h	/^    OSD_RGBQUAD                 bmiColors[1];$/;"	m	struct:tag_OSD_BITMAPINFO
+bmiHeader	hisi/common/loadbmp.h	/^    OSD_BITMAPINFOHEADER    bmiHeader;$/;"	m	struct:tag_OSD_BITMAPINFO
+bwrite	rtsputils.c	/^int bwrite(char *buffer, unsigned short len, RTSP_buffer * rtsp)$/;"	f
+emPayload	rtputils.c	/^    EmRtpPayload        emPayload;$/;"	m	struct:_tagStRtpHandle	file:
+enColorFmt	hisi/common/loadbmp.h	/^    OSD_COLOR_FMT_E enColorFmt;         \/* color format *\/$/;"	m	struct:hiOSD_SURFACE_S
+enViMode	hisi/common/sample_comm.h	/^    SAMPLE_VI_MODE_E enViMode;$/;"	m	struct:sample_video_loss_s
+enVoMode	hisi/common/sample_comm.h	/^    SAMPLE_VO_MODE_E enVoMode;$/;"	m	struct:sample_vo_param_s
+g_EOI	hisi/common/sample_comm_venc.c	/^const HI_U8 g_EOI[2] = {0xFF, 0xD9};$/;"	v
+g_SOI	hisi/common/sample_comm_venc.c	/^const HI_U8 g_SOI[2] = {0xFF, 0xD8};$/;"	v
+g_as32MaxChn	hisi/common/sample_comm_vi.c	/^VI_CHN g_as32MaxChn[VIU_MAX_CHN_NUM];$/;"	v
+g_as32SubChn	hisi/common/sample_comm_vi.c	/^VI_CHN g_as32SubChn[VIU_MAX_CHN_NUM];$/;"	v
+g_as32ViDev	hisi/common/sample_comm_vi.c	/^VI_DEV g_as32ViDev[VIU_MAX_DEV_NUM];$/;"	v
+g_s32DoPlay	rtspservice.c	/^int g_s32DoPlay[CH_MAX] = {0,0,0,0, 0,0,0,0};$/;"	v
+g_s32Maxfd	rtspservice.c	/^int g_s32Maxfd = 0;$/;"	v
+g_s32Quit	rtspservice.c	/^int g_s32Quit = 0;$/;"	v
+get_stat	rtsputils.c	/^const char *get_stat(int err)$/;"	f
+glen	hisi/common/loadbmp.h	/^    int glen;$/;"	m	struct:hiOSD_COMPONENT_INFO_S
+gs_VencPid	hisi/common/sample_comm_venc.c	/^static pthread_t gs_VencPid;$/;"	v	file:
+gs_enNorm	main.c	/^VIDEO_NORM_E gs_enNorm = VIDEO_ENCODING_MODE_PAL;$/;"	v
+gs_s32SnapCnt	hisi/common/sample_comm_venc.c	/^static HI_S32 gs_s32SnapCnt = 0;$/;"	v	file:
+gs_stPara	hisi/common/sample_comm_venc.c	/^static SAMPLE_VENC_GETSTREAM_PARA_S gs_stPara;$/;"	v	file:
+hBlock	hisi/common/sample_comm.h	/^    VB_BLK  hBlock;$/;"	m	struct:hisample_MEMBUF_S
+hPool	hisi/common/sample_comm.h	/^    VB_POOL hPool;$/;"	m	struct:hisample_MEMBUF_S
+height	hisi/common/loadbmp.h	/^    HI_U32    height;       \/* out *\/$/;"	m	struct:tag_OSD_Logo
+hiOSD_COLOR_FMT_E	hisi/common/loadbmp.h	/^typedef enum hiOSD_COLOR_FMT_E$/;"	g
+hiOSD_COMPONENT_INFO_S	hisi/common/loadbmp.h	/^typedef struct hiOSD_COMPONENT_INFO_S{$/;"	s
+hiOSD_RGB_S	hisi/common/loadbmp.h	/^typedef struct hiOSD_RGB_S$/;"	s
+hiOSD_SURFACE_S	hisi/common/loadbmp.h	/^typedef struct hiOSD_SURFACE_S$/;"	s
+hisample_MEMBUF_S	hisi/common/sample_comm.h	/^typedef struct hisample_MEMBUF_S$/;"	s
+iget	ringfifo.c	/^int iget[CH_MAX]; \/* 缓冲区的当前取出位置 *\/$/;"	v
+iput	ringfifo.c	/^int iput[CH_MAX] ; \/* 环形缓冲区的当前放入位置 *\/$/;"	v
+main	main.c	/^int main(void)$/;"	f
+mut	rtspservice.c	/^pthread_mutex_t mut; $/;"	v
+n	ringfifo.c	/^int n [CH_MAX]; \/* 环形缓冲区中的元素总数量 *\/$/;"	v
+pFuHdr	rtputils.c	/^    StFuHdr             *pFuHdr;$/;"	m	struct:_tagStRtpHandle	file:
+pFuInd	rtputils.c	/^    StFuIndicator       *pFuInd;$/;"	m	struct:_tagStRtpHandle	file:
+pNaluFile	rtputils.c	/^    FILE                *pNaluFile;$/;"	m	struct:_tagStRtpHandle	file:
+pNaluHdr	rtputils.c	/^    StNaluHdr           *pNaluHdr;$/;"	m	struct:_tagStRtpHandle	file:
+pRGBBuffer	hisi/common/loadbmp.h	/^    HI_U8 *   pRGBBuffer;   \/* in\/out *\/$/;"	m	struct:tag_OSD_Logo
+pRtpFixedHdr	rtputils.c	/^    StRtpFixedHdr       *pRtpFixedHdr;$/;"	m	struct:_tagStRtpHandle	file:
+pVirAddr	hisi/common/sample_comm.h	/^    HI_U8   *pVirAddr;$/;"	m	struct:hisample_MEMBUF_S
+profileid_sps_pps	rtspservice.c	/^struct profileid_sps_pps{$/;"	s	file:
+psp	rtspservice.c	/^struct profileid_sps_pps psp[CH_MAX]; $/;"	v	typeref:struct:profileid_sps_pps
+pu8PhyAddr	hisi/common/loadbmp.h	/^    HI_U8  *pu8PhyAddr;               \/* physical address *\/$/;"	m	struct:hiOSD_SURFACE_S
+rgbBlue	hisi/common/loadbmp.h	/^        HI_U8    rgbBlue;$/;"	m	struct:tag_OSD_RGBQUAD
+rgbGreen	hisi/common/loadbmp.h	/^        HI_U8    rgbGreen;$/;"	m	struct:tag_OSD_RGBQUAD
+rgbRed	hisi/common/loadbmp.h	/^        HI_U8    rgbRed;$/;"	m	struct:tag_OSD_RGBQUAD
+rgbReserved	hisi/common/loadbmp.h	/^        HI_U8    rgbReserved;$/;"	m	struct:tag_OSD_RGBQUAD
+ringfifo	ringfifo.c	/^struct ringbuf ringfifo[CH_MAX][NMAX];$/;"	v	typeref:struct:ringbuf
+ringfree	ringfifo.c	/^void ringfree(void)$/;"	f
+ringget	ringfifo.c	/^int ringget(int ch,struct ringbuf *getinfo)$/;"	f
+ringmalloc	ringfifo.c	/^void ringmalloc(int size)$/;"	f
+ringput	ringfifo.c	/^void ringput(int ch,unsigned char *buffer,int size,int encode_type)$/;"	f
+ringreset	ringfifo.c	/^void ringreset(int ch)$/;"	f
+rlen	hisi/common/loadbmp.h	/^    int rlen;$/;"	m	struct:hiOSD_COMPONENT_INFO_S
+s32Cnt	hisi/common/sample_comm.h	/^     HI_S32  s32Cnt;$/;"	m	struct:sample_venc_getstream_s
+s32Mdev	hisi/common/sample_comm.h	/^    HI_S32  s32Mdev;$/;"	m	struct:hisample_MEMBUF_S
+s32Sock	rtputils.c	/^    int                 s32Sock;$/;"	m	struct:_tagStRtpHandle	file:
+s32ViChnCnt	hisi/common/sample_comm.h	/^    HI_S32 s32ViChnCnt;		\/\/ Vi Chn Total Count$/;"	m	struct:sample_vi_param_s
+s32ViChnInterval	hisi/common/sample_comm.h	/^    HI_S32 s32ViChnInterval;	\/\/ VI Chn Interval$/;"	m	struct:sample_vi_param_s
+s32ViDevCnt	hisi/common/sample_comm.h	/^    HI_S32 s32ViDevCnt;		\/\/ VI Dev Total Count$/;"	m	struct:sample_vi_param_s
+s32ViDevInterval	hisi/common/sample_comm.h	/^    HI_S32 s32ViDevInterval;	\/\/ Vi Dev Interval$/;"	m	struct:sample_vi_param_s
+s_OSDCompInfo	hisi/common/loadbmp.c	/^OSD_COMP_INFO s_OSDCompInfo[OSD_COLOR_FMT_BUTT] = {{0, 4, 4, 4},   \/*RGB444*\/$/;"	v
+s_u32StartPort	rtspservice.c	/^uint32_t s_u32StartPort=RTP_DEFAULT_PORT;$/;"	v
+s_uPortPool	rtspservice.c	/^uint32_t s_uPortPool[CH_MAX][MAX_CONNECTION];$/;"	v
+sample_rc_e	hisi/common/sample_comm.h	/^typedef enum sample_rc_e$/;"	g
+sample_rgn_change_type_e	hisi/common/sample_comm.h	/^typedef enum sample_rgn_change_type_e$/;"	g
+sample_venc_getstream_s	hisi/common/sample_comm.h	/^typedef struct sample_venc_getstream_s$/;"	s
+sample_vi_chn_set_e	hisi/common/sample_comm.h	/^typedef enum sample_vi_chn_set_e$/;"	g
+sample_vi_mode_e	hisi/common/sample_comm.h	/^typedef enum sample_vi_mode_e$/;"	g
+sample_vi_param_s	hisi/common/sample_comm.h	/^typedef struct sample_vi_param_s$/;"	s
+sample_video_loss_s	hisi/common/sample_comm.h	/^typedef struct sample_video_loss_s$/;"	s
+sample_vo_mode_e	hisi/common/sample_comm.h	/^typedef enum sample_vo_mode_e$/;"	g
+sample_vo_param_s	hisi/common/sample_comm.h	/^typedef struct sample_vo_param_s$/;"	s
+sched	rtsputils.c	/^stScheList sched[CH_MAX][MAX_CONNECTION];$/;"	v
+schedule_add	rtsputils.c	/^int schedule_add(int ch,RTP_session *rtp_session)$/;"	f
+schedule_do	rtsputils.c	/^void *schedule_do(void *arg)$/;"	f
+schedule_remove	rtsputils.c	/^int schedule_remove(int ch,int id)$/;"	f
+schedule_start	rtsputils.c	/^int schedule_start(int ch,int id,stPlayArgs *args)$/;"	f
+schedule_stop	rtsputils.c	/^void schedule_stop(int id)$/;"	f
+send_options_reply	rtspservice.c	/^int send_options_reply(RTSP_buffer * pRtsp, long cseq)$/;"	f
+send_play_reply	rtspservice.c	/^int send_play_reply(RTSP_buffer * pRtsp, RTSP_session * pRtspSessn)$/;"	f
+send_reply	rtsputils.c	/^int send_reply(int err, char *addon, RTSP_buffer * rtsp)$/;"	f
+send_setup_reply	rtspservice.c	/^int send_setup_reply(RTSP_buffer *pRtsp, RTSP_session *pSession, RTP_session *pRtpSes)$/;"	f
+send_teardown_reply	rtspservice.c	/^int send_teardown_reply(RTSP_buffer * pRtsp, long SessionId, long cseq)$/;"	f
+sock_ntop_host	rtsputils.c	/^char *sock_ntop_host(const struct sockaddr *sa, socklen_t salen, char *str, size_t len)$/;"	f
+stPrefs	rtspservice.c	/^StServPrefs stPrefs;$/;"	v
+stServAddr	rtputils.c	/^    struct sockaddr_in  stServAddr;$/;"	m	struct:_tagStRtpHandle	typeref:struct:_tagStRtpHandle::sockaddr_in	file:
+stVoPubAttr	hisi/common/sample_comm.h	/^    VO_PUB_ATTR_S stVoPubAttr;$/;"	m	struct:sample_vo_param_s
+stride	hisi/common/loadbmp.h	/^    HI_U32    stride;       \/* in *\/$/;"	m	struct:tag_OSD_Logo
+tag_OSD_BITMAPFILEHEADER	hisi/common/loadbmp.h	/^typedef struct tag_OSD_BITMAPFILEHEADER {$/;"	s
+tag_OSD_BITMAPINFO	hisi/common/loadbmp.h	/^typedef struct tag_OSD_BITMAPINFO {$/;"	s
+tag_OSD_BITMAPINFOHEADER	hisi/common/loadbmp.h	/^typedef struct tag_OSD_BITMAPINFOHEADER{$/;"	s
+tag_OSD_Logo	hisi/common/loadbmp.h	/^typedef struct tag_OSD_Logo$/;"	s
+tag_OSD_RGBQUAD	hisi/common/loadbmp.h	/^typedef struct tag_OSD_RGBQUAD {$/;"	s
+tcp_accept	rtsputils.c	/^int tcp_accept(int fd)$/;"	f
+tcp_close	rtsputils.c	/^void tcp_close(int s)$/;"	f
+tcp_connect	rtsputils.c	/^int tcp_connect(unsigned short port, char *addr)$/;"	f
+tcp_listen	rtsputils.c	/^int tcp_listen(unsigned short port)$/;"	f
+tcp_read	rtsputils.c	/^int tcp_read(int fd, void *buffer, int nbytes, struct sockaddr *Addr)$/;"	f
+tcp_write	rtsputils.c	/^int tcp_write(int connectSocketId, char *dataBuf, int dataSize)$/;"	f
+u16Height	hisi/common/loadbmp.h	/^    HI_U16  u16Height;                \/* operation height *\/$/;"	m	struct:hiOSD_SURFACE_S
+u16Reserved	hisi/common/loadbmp.h	/^    HI_U16  u16Reserved;$/;"	m	struct:hiOSD_SURFACE_S
+u16SeqNum	rtputils.c	/^    unsigned short      u16SeqNum;$/;"	m	struct:_tagStRtpHandle	file:
+u16SeqNum	rtputils.c	/^    unsigned short u16SeqNum;$/;"	m	struct:__anon1	file:
+u16Stride	hisi/common/loadbmp.h	/^    HI_U16  u16Stride;                \/* surface stride *\/$/;"	m	struct:hiOSD_SURFACE_S
+u16Width	hisi/common/loadbmp.h	/^    HI_U16  u16Width;                 \/* operation width *\/$/;"	m	struct:hiOSD_SURFACE_S
+u1E	rtputils.c	/^    unsigned char u1E:1;$/;"	m	struct:__anon4	file:
+u1Externsion	rtputils.c	/^    unsigned char u1Externsion:1;   $/;"	m	struct:__anon1	file:
+u1F	rtputils.c	/^    unsigned char u1F:1;$/;"	m	struct:__anon2	file:
+u1F	rtputils.c	/^    unsigned char u1F:1;$/;"	m	struct:__anon3	file:
+u1Marker	rtputils.c	/^    unsigned char u1Marker:1;      $/;"	m	struct:__anon1	file:
+u1Padding	rtputils.c	/^    unsigned char u1Padding:1;      $/;"	m	struct:__anon1	file:
+u1R	rtputils.c	/^    unsigned char u1R:1;$/;"	m	struct:__anon4	file:
+u1S	rtputils.c	/^    unsigned char u1S:1;$/;"	m	struct:__anon4	file:
+u2Nri	rtputils.c	/^    unsigned char u2Nri:2;$/;"	m	struct:__anon2	file:
+u2Nri	rtputils.c	/^    unsigned char u2Nri:2;$/;"	m	struct:__anon3	file:
+u2Version	rtputils.c	/^    unsigned char u2Version:2;     $/;"	m	struct:__anon1	file:
+u32CurrTime	rtputils.c	/^    unsigned long long      u32CurrTime;$/;"	m	struct:_tagStRtpHandle	file:
+u32PhyAddr	hisi/common/sample_comm.h	/^    HI_U32  u32PhyAddr;$/;"	m	struct:hisample_MEMBUF_S
+u32PoolId	hisi/common/sample_comm.h	/^    HI_U32  u32PoolId;$/;"	m	struct:hisample_MEMBUF_S
+u32PrevTime	rtputils.c	/^    unsigned long long      u32PrevTime;$/;"	m	struct:_tagStRtpHandle	file:
+u32SSrc	rtputils.c	/^    unsigned int        u32SSrc;$/;"	m	struct:_tagStRtpHandle	file:
+u32SSrc	rtputils.c	/^    unsigned long u32SSrc;         $/;"	m	struct:__anon1	file:
+u32TimeStamp	rtputils.c	/^    unsigned long long u32TimeStamp;$/;"	m	struct:__anon1	file:
+u32TimeStampCurr	rtputils.c	/^    unsigned long long        u32TimeStampCurr;$/;"	m	struct:_tagStRtpHandle	file:
+u32TimeStampInc	rtputils.c	/^    unsigned long long        u32TimeStampInc;$/;"	m	struct:_tagStRtpHandle	file:
+u32WndNum	hisi/common/sample_comm.h	/^    HI_U32 u32WndNum;$/;"	m	struct:sample_vo_param_s
+u4CSrcLen	rtputils.c	/^    unsigned char u4CSrcLen:4;      $/;"	m	struct:__anon1	file:
+u5Type	rtputils.c	/^    unsigned char u5Type:5;$/;"	m	struct:__anon2	file:
+u5Type	rtputils.c	/^    unsigned char u5Type:5;$/;"	m	struct:__anon3	file:
+u5Type	rtputils.c	/^    unsigned char u5Type:5;$/;"	m	struct:__anon4	file:
+u7Payload	rtputils.c	/^    unsigned char u7Payload:7;     $/;"	m	struct:__anon1	file:
+u8B	hisi/common/loadbmp.h	/^    HI_U8   u8B;$/;"	m	struct:hiOSD_RGB_S
+u8G	hisi/common/loadbmp.h	/^    HI_U8   u8G;$/;"	m	struct:hiOSD_RGB_S
+u8R	hisi/common/loadbmp.h	/^    HI_U8   u8R;$/;"	m	struct:hiOSD_RGB_S
+u8Reserved	hisi/common/loadbmp.h	/^    HI_U8   u8Reserved;$/;"	m	struct:hiOSD_RGB_S
+width	hisi/common/loadbmp.h	/^    HI_U32    width;        \/* out *\/$/;"	m	struct:tag_OSD_Logo
