@@ -1,0 +1,290 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ASSERT	printdef.h	144;"	d
+ASSERT	printdef.h	149;"	d
+CMD_ASK_UPGRADE	public.h	/^    CMD_ASK_UPGRADE,                    \/\/核心板发送本命令，使得MCU进入升级模式。$/;"	e	enum:__anon4
+CMD_ASK_VERSION	public.h	/^    CMD_ASK_VERSION  = 0x01,            \/\/请求获取MCU的软件及硬件版本号$/;"	e	enum:__anon4
+CMD_GET_UPDATARE	public.h	/^    CMD_GET_UPDATARE,                   \/\/获取MUC数据接收与写入的情况$/;"	e	enum:__anon4
+CMD_GET_UPGRADE	public.h	/^    CMD_GET_UPGRADE,                    \/\/获取基板升级数据应答$/;"	e	enum:__anon4
+CMD_GET_VERSION	public.h	/^    CMD_GET_VERSION  = 0x81,            \/\/得到MCU反馈的版本号$/;"	e	enum:__anon4
+CMD_GET_VERSIONRE	public.h	/^    CMD_GET_VERSIONRE                   \/\/获取MCU是否成功接收版本号$/;"	e	enum:__anon4
+CMD_SEND_UPDATA	public.h	/^    CMD_SEND_UPDATA,                    \/\/核心板给MCU发送升级数据块$/;"	e	enum:__anon4
+CMD_SEND_VERSION	public.h	/^    CMD_SEND_VERSION,                   \/\/核心板发送版本号给MCU$/;"	e	enum:__anon4
+CRC8	NetParser.c	/^unsigned char CRC8(unsigned char *ptr, unsigned short len)$/;"	f
+CloseCom	rs232.c	/^int CloseCom(int handle)$/;"	f
+DATA_TIME_NOW	printdef.h	38;"	d
+DATA_TIME_NOW	printdef.h	48;"	d
+DEF_IP	public.h	41;"	d
+DEF_PORT	public.h	40;"	d
+DEVICE_ERR	public.h	197;"	d
+DEVICE_INFO	public.h	196;"	d
+DO_CMD_SUCC	public.h	188;"	d
+EVENT_COUNT	public.h	38;"	d
+EXEC	Makefile	/^EXEC=centctrl$/;"	m
+FIRM_BAK_PATH	public.h	234;"	d
+FIRM_USER_PATH	public.h	233;"	d
+GetBaudRate	rs232.c	/^static long GetBaudRate(long baudRate)$/;"	f	file:
+HEART_CMD	public.h	193;"	d
+HEART_RESP	public.h	194;"	d
+HEART_TIME	public.h	186;"	d
+HEX_FILE	public.h	48;"	d
+IH_ARCH_ARM	flashcp.c	33;"	d	file:
+IH_MAGIC	flashcp.c	30;"	d	file:
+IH_OS_LINUX	flashcp.c	32;"	d	file:
+IH_TYPE_FIRMWARE	flashcp.c	40;"	d	file:
+IH_TYPE_INVALID	flashcp.c	35;"	d	file:
+IH_TYPE_KERNEL	flashcp.c	37;"	d	file:
+IH_TYPE_MULTI	flashcp.c	39;"	d	file:
+IH_TYPE_RAMDISK	flashcp.c	38;"	d	file:
+IH_TYPE_STANDALONE	flashcp.c	36;"	d	file:
+LED_GREEN	led.c	/^enum {LED_RED=0, LED_GREEN};$/;"	e	enum:__anon5	file:
+LED_No_GREEN	led.c	/^enum {LED_No_RED=0, LED_No_GREEN, LED_No_LAST};$/;"	e	enum:__anon6	file:
+LED_No_LAST	led.c	/^enum {LED_No_RED=0, LED_No_GREEN, LED_No_LAST};$/;"	e	enum:__anon6	file:
+LED_No_RED	led.c	/^enum {LED_No_RED=0, LED_No_GREEN, LED_No_LAST};$/;"	e	enum:__anon6	file:
+LED_RED	led.c	/^enum {LED_RED=0, LED_GREEN};$/;"	e	enum:__anon5	file:
+MAX_BUFFER_SIZE	public.h	36;"	d
+MAX_CMD_NUM	public.h	185;"	d
+MAX_DDSCH_SUPPORT	public.h	44;"	d
+MAX_PARAM_LEN	param.c	32;"	d	file:
+MAX_RAM_DOTS	public.h	45;"	d
+MAX_USER_CONNECTED	public.h	35;"	d
+NPTO_HEAD_SIZE	public.h	105;"	d
+NPTO_MAGIC0	public.h	103;"	d
+NPTO_MAGIC1	public.h	104;"	d
+NPTO_MAX_SIZE	public.h	106;"	d
+NPTO_PARSE_RESULT_ERRCRC	public.h	/^	NPTO_PARSE_RESULT_ERRCRC,        \/\/ 命令校验出错$/;"	e	enum:__anon3
+NPTO_PARSE_RESULT_NOMAGIC	public.h	/^	NPTO_PARSE_RESULT_NOMAGIC=101,   \/\/ 没找到协议头$/;"	e	enum:__anon3
+NPTO_PARSE_RESULT_SUCC	public.h	/^	NPTO_PARSE_RESULT_SUCC = 0,$/;"	e	enum:__anon3
+NPTO_PARSE_RESULT_TOSMALL	public.h	/^	NPTO_PARSE_RESULT_TOSMALL,       \/\/ 数据没有接收全$/;"	e	enum:__anon3
+NPTO_PARSE_RESULT_UNKNOWN	public.h	/^	NPTO_PARSE_RESULT_UNKNOWN,$/;"	e	enum:__anon3
+NetProto	public.h	/^}NetProto, *NetPtoPtr;$/;"	t	typeref:struct:tagNETPROTOCOL
+NetPtoPtr	public.h	/^}NetProto, *NetPtoPtr;$/;"	t	typeref:struct:tagNETPROTOCOL
+OBJS	Makefile	/^OBJS=main.o flashcp.o misc.o led.o NetParser.o NetIo.o process_cmd.o $/;"	m
+OpenCom	rs232.c	/^int OpenCom( const char *deviceName, long baudRate, int parity,$/;"	f
+PARAM_FILE_PATH	public.h	235;"	d
+PATH_PARAM_FILE	public.h	33;"	d
+PBATR	printdef.h	118;"	d
+PBATR	printdef.h	95;"	d
+PBATS	printdef.h	103;"	d
+PBATS	printdef.h	117;"	d
+PDEBUG	printdef.h	122;"	d
+PDEBUG	printdef.h	129;"	d
+PERROR	printdef.h	58;"	d
+PERROR	printdef.h	67;"	d
+PFUNC	printdef.h	114;"	d
+PFUNC	printdef.h	71;"	d
+PLOG_BATDATA	printdef.h	/^    PLOG_PROTO_N=0x10, PLOG_PROTO_B=0x20, PLOG_TEMP=0x80, PLOG_DEBUG=0x80, PLOG_BATDATA=0x100, };$/;"	e	enum:__anon1
+PLOG_DEBUG	printdef.h	/^    PLOG_PROTO_N=0x10, PLOG_PROTO_B=0x20, PLOG_TEMP=0x80, PLOG_DEBUG=0x80, PLOG_BATDATA=0x100, };$/;"	e	enum:__anon1
+PLOG_ERROR	printdef.h	/^enum {PLOG_NONE=0x00, PLOG_ERROR=0x01, PLOG_TIMER=0x02, PLOG_MESSAGE=0x04, PLOG_FUNC=0x08, $/;"	e	enum:__anon1
+PLOG_FUNC	printdef.h	/^enum {PLOG_NONE=0x00, PLOG_ERROR=0x01, PLOG_TIMER=0x02, PLOG_MESSAGE=0x04, PLOG_FUNC=0x08, $/;"	e	enum:__anon1
+PLOG_MESSAGE	printdef.h	/^enum {PLOG_NONE=0x00, PLOG_ERROR=0x01, PLOG_TIMER=0x02, PLOG_MESSAGE=0x04, PLOG_FUNC=0x08, $/;"	e	enum:__anon1
+PLOG_NONE	printdef.h	/^enum {PLOG_NONE=0x00, PLOG_ERROR=0x01, PLOG_TIMER=0x02, PLOG_MESSAGE=0x04, PLOG_FUNC=0x08, $/;"	e	enum:__anon1
+PLOG_PROTO_B	printdef.h	/^    PLOG_PROTO_N=0x10, PLOG_PROTO_B=0x20, PLOG_TEMP=0x80, PLOG_DEBUG=0x80, PLOG_BATDATA=0x100, };$/;"	e	enum:__anon1
+PLOG_PROTO_N	printdef.h	/^    PLOG_PROTO_N=0x10, PLOG_PROTO_B=0x20, PLOG_TEMP=0x80, PLOG_DEBUG=0x80, PLOG_BATDATA=0x100, };$/;"	e	enum:__anon1
+PLOG_TEMP	printdef.h	/^    PLOG_PROTO_N=0x10, PLOG_PROTO_B=0x20, PLOG_TEMP=0x80, PLOG_DEBUG=0x80, PLOG_BATDATA=0x100, };$/;"	e	enum:__anon1
+PLOG_TIMER	printdef.h	/^enum {PLOG_NONE=0x00, PLOG_ERROR=0x01, PLOG_TIMER=0x02, PLOG_MESSAGE=0x04, PLOG_FUNC=0x08, $/;"	e	enum:__anon1
+PMSG	printdef.h	133;"	d
+PMSG	printdef.h	140;"	d
+PNES	printdef.h	116;"	d
+PNET	printdef.h	115;"	d
+PNETR	printdef.h	78;"	d
+PNETS	printdef.h	87;"	d
+POLY	NetParser.c	21;"	d	file:
+PRINT_ASSERT	printdef.h	27;"	d
+PRINT_DEBUG	printdef.h	25;"	d
+PRINT_ERROR	printdef.h	23;"	d
+PRINT_FUNC	printdef.h	24;"	d
+PRINT_MESSG	printdef.h	26;"	d
+PRINT_PRONAME	printdef.h	29;"	d
+PRINT_TIME	printdef.h	22;"	d
+PROCESS_CMD	process_cmd.c	/^struct PROCESS_CMD{   \/\/ 命令处理的结构体$/;"	s	file:
+PVERSION	printdef.h	51;"	d
+ParamInfo	public.h	/^}ParamInfo, *PrmIPtr;$/;"	t	typeref:struct:tagPROGPARAM
+PrmIPtr	public.h	/^}ParamInfo, *PrmIPtr;$/;"	t	typeref:struct:tagPROGPARAM
+ProgIPtr	public.h	/^}ProgInfo, *ProgIPtr;$/;"	t	typeref:struct:tagPROGINFO
+ProgInfo	public.h	/^}ProgInfo, *ProgIPtr;$/;"	t	typeref:struct:tagPROGINFO
+SAVSTAT_DEVNAME	savstat.c	28;"	d	file:
+SAVSTAT_DEVNAME	savstat.c	40;"	d	file:
+SAVSTAT_DEVOFFSET	savstat.c	29;"	d	file:
+SAVSTAT_DEVOFFSET	savstat.c	41;"	d	file:
+SAVSTAT_DEVPAGE	savstat.c	30;"	d	file:
+SAVSTAT_DEVPAGE	savstat.c	42;"	d	file:
+SAVSTAT_HEAD_SIZE	savstat.c	25;"	d	file:
+SAVSTAT_MAGIC	savstat.c	24;"	d	file:
+SER_NUM	public.h	42;"	d
+SHELL	Makefile	/^SHELL=\/bin\/bash$/;"	m
+STATE_MCU_VER	public.h	/^enum {STATE_NULL=0, STATE_MCU_VER, STATE_UPGRADE, };$/;"	e	enum:__anon2
+STATE_NULL	public.h	/^enum {STATE_NULL=0, STATE_MCU_VER, STATE_UPGRADE, };$/;"	e	enum:__anon2
+STATE_UPGRADE	public.h	/^enum {STATE_NULL=0, STATE_MCU_VER, STATE_UPGRADE, };$/;"	e	enum:__anon2
+STD_WF_ERR	public.h	206;"	d
+STD_WF_OUTPUT	public.h	205;"	d
+SendSerialCmd	process_cmd.c	/^int SendSerialCmd(ProgIPtr prog, int command, unsigned char *extdat, int extlen)$/;"	f
+SendSerialUpgrade	process_cmd.c	/^int SendSerialUpgrade(ProgIPtr prog, int command, unsigned char *extdat, int extlen)$/;"	f
+UNSTD_WF_ERR	public.h	209;"	d
+UNSTD_WF_OUTPUT	public.h	208;"	d
+UPGRADE_CTRL	public.h	202;"	d
+UPGRADE_DATA	public.h	199;"	d
+UP_CTRL_ERR	public.h	203;"	d
+UP_DATA_ERR	public.h	200;"	d
+Usage	main.c	/^void Usage(const char *prog, const char *error)$/;"	f
+UserIPtr	public.h	/^}UserInfo, *UserIPtr;$/;"	t	typeref:struct:tagUSERINFO
+UserInfo	public.h	/^}UserInfo, *UserIPtr;$/;"	t	typeref:struct:tagUSERINFO
+VERIFY_CMD	public.h	190;"	d
+VERIFY_ERR	public.h	191;"	d
+VERSION_FILE	public.h	47;"	d
+WF_START_ERR	public.h	212;"	d
+WF_START_OUTPUT	public.h	211;"	d
+__PRINTDEF_DEF_H	printdef.h	20;"	d
+__PUBLIC_DEF_H	public.h	20;"	d
+__RS232_DEF_H	rs232.h	20;"	d
+_rev	public.h	/^    unsigned char  _rev[3];$/;"	m	struct:tagPROGINFO
+blockisbad	flashcp.c	/^int blockisbad(int fd, long long start)$/;"	f
+blockmarkbad	flashcp.c	/^int blockmarkbad(int fd, long long start)$/;"	f
+check_image	flashcp.c	/^int check_image(unsigned char *buf, unsigned int fsize)$/;"	f
+check_local_ip	param.c	/^int check_local_ip(const char *ipaddr)$/;"	f
+check_update_file	process_cmd.c	/^int check_update_file(ProgIPtr prog)$/;"	f
+checksum	public.h	/^	unsigned char  checksum;         \/\/ 将本字段设置为0时,所有INT之和取BYTE。$/;"	m	struct:tagNETPROTOCOL
+checksum	public.h	/^    unsigned int   checksum;$/;"	m	struct:tagPROGINFO
+cmd_num	process_cmd.c	/^    unsigned short cmd_num;$/;"	m	struct:PROCESS_CMD	file:
+cmdlen	public.h	/^	unsigned short cmdlen;           \/\/ 本条命令的长度$/;"	m	struct:tagNETPROTOCOL
+cmdseq	public.h	/^	unsigned short cmdseq;           \/\/ 命令序号，发送端标志，返回命令保持不变$/;"	m	struct:tagNETPROTOCOL
+command	process_cmd.c	/^    unsigned char command[MAX_CMD_NUM];$/;"	m	struct:PROCESS_CMD	file:
+command	public.h	/^	unsigned char  command;          \/\/ 命令字，命令字的最高位为1，表示反馈命令$/;"	m	struct:tagNETPROTOCOL
+dat	public.h	/^	unsigned char  dat[NPTO_MAX_SIZE-NPTO_HEAD_SIZE];$/;"	m	struct:tagNETPROTOCOL
+epollfd	public.h	/^    int            epollfd;        \/\/ epoll info$/;"	m	struct:tagPROGINFO
+err_connect	NetIo.c	/^static int err_connect(ProgIPtr prog, int n)$/;"	f	file:
+events	public.h	/^    struct epoll_event events[EVENT_COUNT];$/;"	m	struct:tagPROGINFO	typeref:struct:tagPROGINFO::epoll_event
+fcmd_proc	process_cmd.c	/^typedef int (*fcmd_proc)(ProgIPtr prog, int n, NetPtoPtr pcmd);$/;"	t	file:
+fdListen	public.h	/^    int            fdListen;              \/\/ listen sock fd$/;"	m	struct:tagPROGINFO
+firmware_read	process_cmd.c	/^int firmware_read(char *fname, int offset, void *obuf)$/;"	f
+flashcp_main	flashcp.c	/^int flashcp_main(const char *devicename, int devoffset, const char *filename, int quiet, int *r_percent)$/;"	f
+flashcp_memory_read	flashcp.c	/^int flashcp_memory_read(const char *devicename, int devoffset,$/;"	f
+flashcp_memory_read	savstat.c	/^static int flashcp_memory_read(const char *devicename, int devoffset,$/;"	f	file:
+flashcp_memory_write	flashcp.c	/^int flashcp_memory_write(const char *devicename, int devoffset,$/;"	f
+flashcp_memory_write	savstat.c	/^static int flashcp_memory_write(const char *devicename, int devoffset,$/;"	f	file:
+fp	public.h	/^    FILE           *fp;$/;"	m	struct:tagPROGINFO
+full_write	flashcp.c	/^ssize_t full_write(int fd, const void *buf, size_t len)$/;"	f
+gProgInfo	main.c	/^ProgInfo gProgInfo;$/;"	v
+g_check_image	main.c	/^int g_check_image = 1;$/;"	v
+g_log_level	main.c	/^int g_log_level = 0x000F;$/;"	v
+g_rs232_dev	SerialIo.c	/^char g_rs232_dev[16];$/;"	v
+get_command	NetIo.c	/^static int get_command(ProgIPtr prog, int n, NetPtoPtr pcmd)$/;"	f	file:
+get_device_info	process_cmd.c	/^static int get_device_info(unsigned char dat[])$/;"	f	file:
+heart_beat	NetIo.c	/^int heart_beat(ProgIPtr prog) { \/\/ 每十秒进行一次心跳连接$/;"	f
+iExit	public.h	/^    int            iExit;$/;"	m	struct:tagPROGINFO
+iMainState	public.h	/^    unsigned char  iMainState;            \/\/ STATE$/;"	m	struct:tagPROGINFO
+ih_arch	flashcp.c	/^    uint8_t         ih_arch;        \/* CPU architecture             *\/$/;"	m	struct:image_header	file:
+ih_comp	flashcp.c	/^    uint8_t         ih_comp;        \/* Compression Type             *\/$/;"	m	struct:image_header	file:
+ih_dcrc	flashcp.c	/^    uint32_t        ih_dcrc;        \/* Image Data CRC Checksum      *\/$/;"	m	struct:image_header	file:
+ih_ep	flashcp.c	/^    uint32_t        ih_ep;          \/* Entry Point Address          *\/$/;"	m	struct:image_header	file:
+ih_hcrc	flashcp.c	/^    uint32_t        ih_hcrc;        \/* Image Header CRC Checksum    *\/$/;"	m	struct:image_header	file:
+ih_load	flashcp.c	/^    uint32_t        ih_load;        \/* Data  Load  Address          *\/$/;"	m	struct:image_header	file:
+ih_magic	flashcp.c	/^    uint32_t        ih_magic;       \/* Image Header Magic Number    *\/$/;"	m	struct:image_header	file:
+ih_name	flashcp.c	/^    uint8_t         ih_name[32];    \/* Image Name           *\/$/;"	m	struct:image_header	file:
+ih_os	flashcp.c	/^    uint8_t         ih_os;          \/* Operating System             *\/$/;"	m	struct:image_header	file:
+ih_size	flashcp.c	/^    uint32_t        ih_size;        \/* Image Data Size              *\/$/;"	m	struct:image_header	file:
+ih_time	flashcp.c	/^    uint32_t        ih_time;        \/* Image Creation Timestamp     *\/$/;"	m	struct:image_header	file:
+ih_type	flashcp.c	/^    uint8_t         ih_type;        \/* Image Type                   *\/$/;"	m	struct:image_header	file:
+image2cpu	flashcp.c	56;"	d	file:
+image_header	flashcp.c	/^typedef struct image_header {$/;"	s	file:
+image_header_t	flashcp.c	/^} image_header_t;$/;"	t	typeref:struct:image_header	file:
+lastheart	public.h	/^    time_t        lastheart;               \/\/ 用来标记最后一次收到心跳反馈的时间$/;"	m	struct:tagUSERINFO
+led_command	led.c	/^int led_command(int R_G, int power, int brightness, int delay_on, int delay_off)$/;"	f
+led_ctrl	led.c	/^static int led_ctrl(int number, int mypower, int brightness, int delay_on, int delay_off)$/;"	f	file:
+led_green_ctrl	led.c	/^int led_green_ctrl(int mypower, int brightness, int delay_on, int delay_off)$/;"	f
+led_green_off	led.c	/^int led_green_off(int mypower)$/;"	f
+led_green_on	led.c	/^int led_green_on(int mypower)$/;"	f
+led_read	led.c	/^static int led_read(const char *devname)$/;"	f	file:
+led_red_ctrl	led.c	/^int led_red_ctrl(int mypower, int brightness, int delay_on, int delay_off)$/;"	f
+led_red_off	led.c	/^int led_red_off(int mypower)$/;"	f
+led_red_on	led.c	/^int led_red_on(int mypower)$/;"	f
+led_show_file	led.c	/^int led_show_file(int type)$/;"	f
+led_write	led.c	/^static int led_write(const char *devname, const char *buf, int len)$/;"	f	file:
+ledd_cmd_no	led.c	/^static int  ledd_cmd_no = 0;$/;"	v	file:
+ledd_cmdbuf	led.c	/^static char ledd_cmdbuf[256];$/;"	v	file:
+ledd_fd	led.c	/^static int   ledd_fd = -1;$/;"	v	file:
+ledd_open	led.c	/^int ledd_open(void)$/;"	f
+listport	public.h	/^    int            listport;              \/\/ tcp sock listen port$/;"	m	struct:tagPROGPARAM
+magic0	public.h	/^	unsigned char  magic0;           \/\/ 恒定为0xAA$/;"	m	struct:tagNETPROTOCOL
+magic1	public.h	/^	unsigned char  magic1;           \/\/ 恒定为0x55$/;"	m	struct:tagNETPROTOCOL
+main	main.c	/^int main(int argc, char *argv[])$/;"	f
+misc_current_time	misc.c	/^unsigned int misc_current_time(int bUpdate)$/;"	f
+misc_read_serialGPIO	misc.c	/^unsigned int misc_read_serialGPIO(void)$/;"	f
+misc_update_time	misc.c	/^unsigned int misc_update_time(void)$/;"	f
+msec	misc.c	/^    unsigned int   msec;$/;"	m	struct:tagCURTIMEVAL	file:
+msecNow	public.h	/^    unsigned int   msecNow;$/;"	m	struct:tagPROGINFO
+msecSend	public.h	/^    unsigned int   msecSend;$/;"	m	struct:tagPROGINFO
+msec_cnt	misc.c	/^    unsigned int   msec_cnt;$/;"	m	struct:tagCURTIMEVAL	file:
+name_arr	rs232.c	/^const int name_arr[] = {$/;"	v
+net_ip	public.h	/^    char           net_ip[24];            \/\/ ip address$/;"	m	struct:tagPROGPARAM
+net_mac	public.h	/^    char           net_mac[24];           \/\/ ip and mac for network$/;"	m	struct:tagPROGPARAM
+netio_close	NetIo.c	/^int netio_close(ProgIPtr prog)$/;"	f
+netio_create_tcpserver	NetIo.c	/^int netio_create_tcpserver(ProgIPtr prog)$/;"	f
+netio_main_tcpserver	NetIo.c	/^int netio_main_tcpserver(ProgIPtr prog)$/;"	f
+new_connect	NetIo.c	/^static int new_connect(ProgIPtr prog)$/;"	f	file:
+npto_CRC	NetParser.c	/^int npto_CRC(void *src, int ilen)$/;"	f
+npto_GenerateRaw	NetParser.c	/^int npto_GenerateRaw(void *obuf, int *olen, int cmd, unsigned int cmdseq,$/;"	f
+npto_GenerateResp	NetParser.c	/^int npto_GenerateResp(void *obuf, int *olen, NetPtoPtr cmdPkt, int result, $/;"	f
+npto_Parse	NetParser.c	/^int npto_Parse(void *src, int ilen, NetPtoPtr cmdPkt, int *olen, int *result)$/;"	f
+param	public.h	/^    ParamInfo      param;$/;"	m	struct:tagPROGINFO
+parse_args	main.c	/^int parse_args(int argc, char *argv[], void *dat)$/;"	f
+prm_Default	param.c	/^int prm_Default(ParamInfo *pinfo)$/;"	f
+prm_Default_fromENV	param.c	/^const int prm_Default_fromENV(const char *env, char *obuf)$/;"	f
+prm_Load	param.c	/^int prm_Load(ParamInfo *pinfo, const char *fname)$/;"	f
+prm_LoadFlash	param.c	/^static int prm_LoadFlash(void *obuf, int len, const char *devname)$/;"	f	file:
+prm_Load_SETTINGS	param.c	/^static int prm_Load_SETTINGS(ParamInfo *pinfo, const char *sline, void *dat)$/;"	f	file:
+prm_Save	param.c	/^int prm_Save(ParamInfo *pinfo, const char *fname)$/;"	f
+prm_SaveFlash	param.c	/^static int prm_SaveFlash(void *buf, int len, const char *devname)$/;"	f	file:
+prm_SetBoard	param.c	/^int prm_SetBoard(ParamInfo *pinfo)$/;"	f
+prm_netip_2_binary	param.c	/^int prm_netip_2_binary(unsigned char *dst, const char *src)$/;"	f
+prm_netmac_2_binary	param.c	/^int prm_netmac_2_binary(unsigned char *dst, const char *src)$/;"	f
+proc_cmd	process_cmd.c	/^}proc_cmd;$/;"	v	typeref:struct:PROCESS_CMD
+proc_device_info	process_cmd.c	/^static int proc_device_info (ProgIPtr prog, int n, NetPtoPtr pcmd) {$/;"	f	file:
+proc_heart_resp	process_cmd.c	/^static int proc_heart_resp(ProgIPtr prog, int n, NetPtoPtr pcmd) {$/;"	f	file:
+proc_mcu_rx	process_cmd.c	/^static int proc_mcu_rx(ProgIPtr prog, int n, NetPtoPtr pcmd)$/;"	f	file:
+proc_mcu_version	process_cmd.c	/^static int proc_mcu_version(ProgIPtr prog, int n, NetPtoPtr pcmd)$/;"	f	file:
+proc_resp_succ	process_cmd.c	/^static int proc_resp_succ(ProgIPtr prog, int n, NetPtoPtr pcmd) {$/;"	f	file:
+proc_upgrade_ctrl	process_cmd.c	/^static int proc_upgrade_ctrl(ProgIPtr prog, int n, NetPtoPtr pcmd) {$/;"	f	file:
+proc_upgrade_data	process_cmd.c	/^static int proc_upgrade_data(ProgIPtr prog, int n, NetPtoPtr pcmd) {$/;"	f	file:
+proc_verify_cmd	process_cmd.c	/^static int proc_verify_cmd(ProgIPtr prog, int n, NetPtoPtr pcmd) {$/;"	f	file:
+process_cmd	process_cmd.c	/^    fcmd_proc process_cmd[MAX_CMD_NUM];$/;"	m	struct:PROCESS_CMD	file:
+process_command	process_cmd.c	/^int process_command(ProgIPtr prog, int n, NetPtoPtr pcmd) {$/;"	f
+progress	flashcp.c	/^static void progress(int mode, int count, int total)$/;"	f	file:
+recvBuf	public.h	/^    unsigned char  recvBuf[MAX_BUFFER_SIZE];$/;"	m	struct:tagUSERINFO
+recvLen	public.h	/^    unsigned short recvLen, verified;$/;"	m	struct:tagUSERINFO
+recv_data	NetIo.c	/^static int recv_data(ProgIPtr prog, int n)$/;"	f	file:
+reg_cmd_proc	process_cmd.c	/^static void reg_cmd_proc(unsigned char command, fcmd_proc fproc)$/;"	f	file:
+register_all_command	process_cmd.c	/^void register_all_command(void) {$/;"	f
+safe_write	flashcp.c	/^ssize_t safe_write(int fd, const void *buf, size_t count)$/;"	f
+sec	misc.c	/^    unsigned int   sec;$/;"	m	struct:tagCURTIMEVAL	file:
+sendBuf	public.h	/^    unsigned char  sendBuf[MAX_BUFFER_SIZE];$/;"	m	struct:tagPROGINFO
+sendBufLen	public.h	/^    int            sendBufLen;$/;"	m	struct:tagPROGINFO
+send_cmd	process_cmd.c	/^static int send_cmd(int connfd, NetPtoPtr pcmd, int result,$/;"	f	file:
+sendseq	public.h	/^    int            sendseq;$/;"	m	struct:tagPROGINFO
+serial_close	SerialIo.c	/^void serial_close(int fd)$/;"	f
+serial_new_connect	SerialIo.c	/^int serial_new_connect(ProgIPtr prog, int fd)$/;"	f
+serial_open	SerialIo.c	/^int serial_open(const char *devname)$/;"	f
+serial_read	SerialIo.c	/^int serial_read(int fd, void *ptr, int len)$/;"	f
+set_Parity	rs232.c	/^static int set_Parity(int fd,int databits,int stopbits,int parity, const char *deviceName)$/;"	f	file:
+set_speed	rs232.c	/^static int set_speed(int fd, int speed)$/;"	f	file:
+sn	public.h	/^    char           sn[36];                \/\/ serial number$/;"	m	struct:tagPROGPARAM
+sockfd	public.h	/^    int           sockfd;$/;"	m	struct:tagUSERINFO
+speed_arr	rs232.c	/^const int speed_arr[] = {$/;"	v
+start_upgrade	process_cmd.c	/^static void * start_upgrade(void *ptr)$/;"	f	file:
+store_file	process_cmd.c	/^static int store_file(ProgIPtr prog, unsigned char *dat, int len, int offset) $/;"	f	file:
+sumsize	public.h	/^    unsigned int   sumsize; $/;"	m	struct:tagPROGINFO
+systime	misc.c	/^}systime;$/;"	v	typeref:struct:tagCURTIMEVAL
+tagCURTIMEVAL	misc.c	/^struct tagCURTIMEVAL {$/;"	s	file:
+tagNETPROTOCOL	public.h	/^typedef struct tagNETPROTOCOL {$/;"	s
+tagPROGINFO	public.h	/^typedef struct tagPROGINFO {$/;"	s
+tagPROGPARAM	public.h	/^typedef struct tagPROGPARAM {$/;"	s
+tagUSERINFO	public.h	/^typedef struct tagUSERINFO {              \/\/ user connect me$/;"	s
+tpfname	process_cmd.c	/^static const char tpfname[] = "\/tmp\/fireware.bin";$/;"	v	file:
+ttyfd	public.h	/^    int            ttyfd;                 \/\/ rs232 fd$/;"	m	struct:tagPROGINFO
+upg_offset	public.h	/^	int            upg_offset;$/;"	m	struct:tagPROGINFO
+users	public.h	/^    UserInfo       users[MAX_USER_CONNECTED];$/;"	m	struct:tagPROGINFO
+verified	public.h	/^    unsigned short recvLen, verified;$/;"	m	struct:tagUSERINFO
