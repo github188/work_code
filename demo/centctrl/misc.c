@@ -1,5 +1,5 @@
 /********************************************************************
-* $ID: param.c              Mon 2016-09-19 15:43:44 +0800  lz       *
+* $ID: misc.c               Thu 2016-09-22 15:46:03 +0800  lz       *
 *                                                                   *
 * Description:                                                      *
 *                                                                   *
@@ -16,59 +16,42 @@
 *                                                                   *
 * No warranty, no liability, use this at your own risk!             *
 ********************************************************************/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-#include <time.h>
 
-#include "public.h"
 #include "printdef.h"
 
+struct tagCURTIMEVAL{
+	unsigned int sec;
+	unsigned int msec;
+	unsigned int msec_cnt;
+}systime;
 
-extern char g_rs232_dev[];
-int prm_SetBoard(ParamInfo *pinfo)
+unsigned int misc_update_time(void)
 {
-	char command[256];
-	int fd;
+	struct timespec tp;
 
-	if((fd = open("/proc/cmdline", O_RDONLY)) > 0)
-	{
-		read(fd, command, 256);
-		close(fd);
+	clock_gettime(CLOCK_MONOTONIC, &tp);
 
-		if(strstr(command, "ttymxc0")) //strstr（在一字符串中查找指定的字符串）
-		{
-			sprintf(g_rs232_dev, "/dev/%s", "ttymxc1");
-		}
-		else
-			sprintf(g_rs232_dev, "/dev/%s", "tty0");
-
-		if(strstr(command, "nfsroot"))
-		{
-			printf("RUN NFS\n");
-			return 0;
-		}
-	}
-
-	return 0;
+	systime.sec     = tp.tv_sec;
+	systime.msec    = tp.tv_nsec / 1000000;
+	systime.msec_cnt = (tp.tv_sec * 1000 + systime.msec);
+	return tp.tv_sec;
 }
 
-int prm_Default(ParamInfo *pinfo)
+unsigned int misc_current_time(int bUpdate)
 {
-	if(!pinfo) return -1;
-
-	memset(pinfo , 0 , sizeof(ParamInfo));
-
-	pinfo->listport = DEF_PORT;
-	snprintf(pinfo->net_ip, sizeof(pinfo->net_ip), "%s", DEF_IP); //http://kapok.blog.51cto.com/517862/113471
-	snprintf(pinfo->net_mac, sizeof(pinfo->net_mac), "%s", "00:01:02:03:04:05");
-	snprintf(pinfo->sn, sizeof(pinfo->sn), "%s", SER_NUM);
-	return 0;
+	if(bUpdate) misc_update_time();
+	return systime.msec_cnt;
 }
 
 
-/********************* End Of File: param.c *********************/
+
+/********************* End Of File: misc.c *********************/

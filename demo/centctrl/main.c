@@ -58,6 +58,25 @@ int main(int argc, char *argv[])
 	prog->ttyfd = serial_open(NULL);
 	serial_new_connect(prog, prog->ttyfd);
 
+	prog->iMainState = STATE_MCU_VER;
+
+	while(1)
+	{
+		misc_update_time();
+		prog->msecNow = misc_current_time();
+
+		if(netio_main_tcpserver(prog) == 0){}
+	
+		switch(prog->iMainState) {
+			case STATE_MCU_VER:
+				if((prog->msecNow - prog->msecSend) > 2000) {
+					SendSerialCmd(prog, CMD_ASK_VERSION, NULL, 0);
+					prog->msecSend = prog->msecNow;
+				}
+				break;
+		}
+	}
+
 
 }
 

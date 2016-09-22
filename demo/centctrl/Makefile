@@ -2,7 +2,7 @@
 #CROSSCOMPILE=/opt/gcc-linaro-2013.03/bin/arm-linux-gnueabihf-
 
 EXEC=ttytest
-OBJS=rs232.o main.o param.o SerialIo.o
+OBJS=rs232.o main.o param.o SerialIo.o misc.o process_cmd.o NetParser.o NetIo.o 
 
 #CC=$(CROSSCOMPILE)gcc
 
