@@ -55,8 +55,9 @@ int serial_new_connect(ProgIPtr prog, int fd)
 		return -1;
 	}
 
-	flags = fcntl(fd, F_GETFL ,0); //http://www.cnblogs.com/xuyh/p/3273082.html
-	fcntl(fd, F_SETFL, flags | O_NONBLOCK);
+	////http://www.cnblogs.com/xuyh/p/3273082.html
+	flags = fcntl(fd, F_GETFL ,0);                 //取得fd的文件状态标志
+	fcntl(fd, F_SETFL, flags | O_NONBLOCK);        // 设置给arg描述符状态标志
 
 	prog->users[j].sockfd = fd;
 	prog->users[j].lastheart = time(NULL);

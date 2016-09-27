@@ -40,21 +40,26 @@ int main(int argc, char *argv[])
 	ProgIPtr prog = &gProgInfo;
 	PVERSION("mbox prog");
 
+	//TCP server close, but we send(...), it will Broken Pipe
 	signal(SIGPIPE, SIG_IGN);
 
 	memset(prog, 0, sizeof(ProgInfo));
 
+	//加载配置文件
 	prm_Default(&prog->param);
 
+	//获取设备串口号
 	prm_SetBoard(&prog->param);
 	prog->iExit = 0;
 
+	//create listen socket
 	if(netio_create_tcpserver(prog) == -1)
 	{
 		PERROR("Create socket failed!\n");
 		return -1;
 	}
-
+	
+	//打开串口创建串口连接
 	prog->ttyfd = serial_open(NULL);
 	serial_new_connect(prog, prog->ttyfd);
 

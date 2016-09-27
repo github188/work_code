@@ -74,12 +74,14 @@ int netio_create_tcpserver(ProgIPtr prog)
 		PERROR("Create socket error:");
 		return -1;
 	}
-
+	
+	//解除端口复用
 	if(setsockopt(sockfd, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(opt)) == -1)
 	{
 		PERROR("setsockopt failed!");
 		return -1;
 	}
+
 
 	bzero(&saddr, sizeof(saddr));
 	saddr.sin_family = AF_INET;
@@ -100,13 +102,15 @@ int netio_create_tcpserver(ProgIPtr prog)
 
 	prog->fdListen = sockfd;
 
+	//创建epollfd 
 	prog->epollfd = epoll_create(MAX_USER_CONNECTED);
 	if(prog->epollfd == -1)
 	{
 		PERROR("Create epoll error: ");
 		return -1;
 	}
-
+	
+	//把sockfd加到epollfd中去
 	ev.events = EPOLLIN;
 	ev.data.fd = sockfd;
 	if(epoll_ctl(prog->epollfd, EPOLL_CTL_ADD, sockfd, &ev) == -1)
@@ -115,6 +119,7 @@ int netio_create_tcpserver(ProgIPtr prog)
 		return-1;
 	}
 
+	//注册所有的命令字
 	register_all_command();
 
 	return 0;
@@ -171,10 +176,12 @@ static int get_command(ProgIPtr prog, int n, NetPtoPtr pcmd)
 	int recvlen = prog->users[n].recvLen;
 
 	if(recvlen < NPTO_HEAD_SIZE)
-		return -1;
+		return -1; //获取到的长度不够
 
+	//从缓存中获取一条命令
 	npto_Parse(prog->users[n].recvBuf, prog->users[n].recvLen, pcmd, &buflen, &result);
 
+	//将获取过的或者错误的数据覆盖掉
 	if(buflen > 0 && recvlen -buflen >=0)
 	{
 		memmove(prog->users[n].recvBuf, prog->users[n].recvBuf+buflen, recvlen-buflen);
@@ -184,12 +191,13 @@ static int get_command(ProgIPtr prog, int n, NetPtoPtr pcmd)
 	return result == NPTO_PARSE_RESULT_SUCC ? 0: -1;
 }
 
-
+//创建一个tcp服务和一个epollfd 
 int netio_main_tcpserver(ProgIPtr prog)
 {
 	int i, nfds;
 	NetProto cmd;
-
+	
+	//该函数返回已经准备好的描述符时间数目
 	nfds = epoll_wait(prog->epollfd, prog->events, EVENT_COUNT, 8);
 	if(nfds == -1)
 	{
@@ -197,17 +205,19 @@ int netio_main_tcpserver(ProgIPtr prog)
 		return -1;
 	}
 
+	//进行遍历，这里只要遍历已经准备好的IO时间
 	for(i = 0; i< nfds; ++i)
 	{
-		if(prog->events[i].events &(EPOLLERR | EPOLLRDHUP))
+		//根据描述符的类型和事件类型进行处理
+		if(prog->events[i].events &(EPOLLERR | EPOLLRDHUP)) //有客户端关闭或者遇到错误
 		{
-			err_connect(prog,i);
+			err_connect(prog,i);//连接错误，关闭连接
 		}
-		else if(prog->events[i].data.fd == prog->fdListen)
+		else if(prog->events[i].data.fd == prog->fdListen) // 有新的连接请求
 		{
 			new_connect(prog);
 		}
-		else if(prog->events[i].events & EPOLLIN)
+		else if(prog->events[i].events & EPOLLIN) //已准备好，可以进行读写操作
 		{
 			UserIPtr user = (UserIPtr)prog->events[i].data.ptr;
 			if(user->sockfd == prog->ttyfd)
@@ -220,11 +230,11 @@ int netio_main_tcpserver(ProgIPtr prog)
 		}
 	}
 
-	for(i = 0; i< MAX_USER_CONNECTED; ++i)
+	for(i = 0; i< MAX_USER_CONNECTED; ++i) // do command 
 	{
 		if(!prog->users[i].sockfd || !prog->users[i].recvLen)
 		{
-			continue;
+			continue;  //没有连接，或者没有数据的
 		}
 
 		while(get_command(prog, i, &cmd) != -1)

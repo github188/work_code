@@ -38,7 +38,7 @@ unsigned int misc_update_time(void)
 {
 	struct timespec tp;
 
-	clock_gettime(CLOCK_MONOTONIC, &tp);
+	clock_gettime(CLOCK_MONOTONIC, &tp);                 //基于Linux C语言的时间函数,他可以用于计算精度和纳秒
 
 	systime.sec     = tp.tv_sec;
 	systime.msec    = tp.tv_nsec / 1000000;
