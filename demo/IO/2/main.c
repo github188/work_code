@@ -20,7 +20,10 @@
 
 int main(int argc, char *argv[])
 {
-	int fd, rdlen =0;
+	int fd, fd_cp, rdlen =0, rdlen_cp = 0;
+
+	const char *fname = "version.txt";
+	const char *nname = "version_cp.txt";
 
 	if((fd = open(fname, O_RDONLY, NULL)) < 0)
 	{
@@ -28,6 +31,13 @@ int main(int argc, char *argv[])
 		return 0;
 	}
 
+	if((fd_cp = open(nname, O_RDONLY, NULL)) < 0)
+	{
+		perror("open error nname \n");
+		return 0;
+	}
+
+		
 	
 }
 

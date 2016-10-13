@@ -82,7 +82,7 @@ int main(int argc, char *argv[])
 	
 	switch(prog->iMainState) {
 	case STATE_MCU_VER:
-	    if((prog->msecNow - prog->msecSend) > 500) {
+	    if((prog->msecNow - prog->msecSend) > 3000) {
 		SendSerialCmd(prog, CMD_ASK_VERSION, NULL, 0);
 		prog->msecSend = prog->msecNow;
 	    }
@@ -94,7 +94,6 @@ int main(int argc, char *argv[])
 		}
 	    break;
 	}
-
     }
 
     // close socket

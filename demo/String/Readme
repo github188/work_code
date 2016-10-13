@@ -1,0 +1,2 @@
+
+1   将IP地址转换为16进制数据   192.168.1.22 -->C0 A8 01 16 aa:bb:cc:dd:dd:ee  -->AA BB CC DD DD EE  使用strtol index函数完成

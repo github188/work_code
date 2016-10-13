@@ -236,7 +236,7 @@ int netio_main_tcpserver(ProgIPtr prog)
 
 	while (get_command(prog, i, &cmd) != -1) {
 	    if (!prog->users[i].verified) {
-		cmd.command = VERIFY_CMD;
+		//cmd.command = VERIFY_CMD;
 		if (process_command(prog, i, &cmd) == -1) {
 		    PERROR("verified failed !\n");
 		    break;

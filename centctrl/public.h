@@ -44,8 +44,8 @@
 #define MAX_DDSCH_SUPPORT         (4)
 #define MAX_RAM_DOTS              (1024)
 
-#define VERSION_FILE                "/lib/ko/version.txt"
-#define HEX_FILE                    "/lib/ko/mBox.hex"
+#define VERSION_FILE                "/tmp/version.txt"
+#define HEX_FILE                    "/tmp/mBox.hex"
 
 typedef struct tagPROGPARAM {
     int            listport;              // tcp sock listen port
