@@ -1,0 +1,304 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+APP	rtsputils.h	/^    APP=204\/*Application-specific functions*\/$/;"	e	enum:__anon10
+AddClient	rtspservice.c	/^void AddClient(RTSP_buffer **ppRtspList, int fd)$/;"	f
+BYE	rtsputils.h	/^    BYE=203,\/*Indicates end of participation*\/$/;"	e	enum:__anon10
+BeginFrame	rtsputils.h	/^	int BeginFrame;$/;"	m	struct:_schedule_list
+CC	Makefile	/^CC = $(CROSS)gcc$/;"	m
+CH_MAX	rtsputils.h	187;"	d
+COMPILE.c	Makefile	/^COMPILE.c = $(CC) $(CFLAGS) -c$/;"	m
+ERR_ALLOC	rtsputils.h	35;"	d
+ERR_CONNECTION_CLOSE	rtsputils.h	41;"	d
+ERR_EOF	rtsputils.h	39;"	d
+ERR_FATAL	rtsputils.h	40;"	d
+ERR_GENERIC	rtsputils.h	32;"	d
+ERR_INPUT_PARAM	rtsputils.h	36;"	d
+ERR_NOERROR	rtsputils.h	31;"	d
+ERR_NOT_FOUND	rtsputils.h	33;"	d
+ERR_NOT_SD	rtsputils.h	37;"	d
+ERR_PARSE	rtsputils.h	34;"	d
+ERR_UNSUPPORTED_PT	rtsputils.h	38;"	d
+EmRtpPayload	rtputils.h	/^}EmRtpPayload;$/;"	t	typeref:enum:__anon11
+EventLoop	rtspservice.c	/^void EventLoop(int s32MainFd)$/;"	f
+FRAME_TYPE_B	rtputils.h	/^enum H264_FRAME_TYPE {FRAME_TYPE_I, FRAME_TYPE_P, FRAME_TYPE_B};$/;"	e	enum:H264_FRAME_TYPE
+FRAME_TYPE_I	rtputils.h	/^enum H264_FRAME_TYPE {FRAME_TYPE_I, FRAME_TYPE_P, FRAME_TYPE_B};$/;"	e	enum:H264_FRAME_TYPE
+FRAME_TYPE_P	rtputils.h	/^enum H264_FRAME_TYPE {FRAME_TYPE_I, FRAME_TYPE_P, FRAME_TYPE_B};$/;"	e	enum:H264_FRAME_TYPE
+G711	rtputils.h	35;"	d
+GetAnnexbNALU	ringfifo.c	/^int GetAnnexbNALU()$/;"	f
+GetSdpDescr	rtspservice.c	/^void GetSdpDescr(RTSP_buffer * pRtsp, char *pDescr, char *s8Str)$/;"	f
+GetSdpId	rtspservice.c	/^char *GetSdpId(char *buffer)$/;"	f
+H264	rtputils.h	34;"	d
+H264_FRAME_TYPE	rtputils.h	/^enum H264_FRAME_TYPE {FRAME_TYPE_I, FRAME_TYPE_P, FRAME_TYPE_B};$/;"	g
+HDR	Makefile	/^HDR = $(wildcard *.h)$/;"	m
+HDR_ACCEPT	rtsputils.h	45;"	d
+HDR_ALLOW	rtsputils.h	46;"	d
+HDR_BLOCKSIZE	rtsputils.h	47;"	d
+HDR_CONTENTLENGTH	rtsputils.h	44;"	d
+HDR_CONTENTTYPE	rtsputils.h	48;"	d
+HDR_CSEQ	rtsputils.h	53;"	d
+HDR_DATE	rtsputils.h	49;"	d
+HDR_RANGE	rtsputils.h	57;"	d
+HDR_REQUIRE	rtsputils.h	50;"	d
+HDR_SEQUENCENO	rtsputils.h	52;"	d
+HDR_SESSION	rtsputils.h	55;"	d
+HDR_STREAM	rtsputils.h	54;"	d
+HDR_TRANSPORT	rtsputils.h	56;"	d
+HDR_TRANSPORTREQUIRE	rtsputils.h	51;"	d
+HDR_USER_AGENT	rtsputils.h	58;"	d
+HisiPutH264DataToBuffer	ringfifo.c	/^int HisiPutH264DataToBuffer(void *buf,int size)$/;"	f
+HndRtp	rtputils.c	/^}StRtpObj, *HndRtp;$/;"	t	typeref:struct:_tagStRtpHandle	file:
+INIT_STATE	rtsputils.h	96;"	d
+IntHandl	rtspservice.c	/^void IntHandl(int i)$/;"	f
+LINK.c	Makefile	/^LINK.c = $(CC) $(CLINKS)$/;"	m
+MAX_CONNECTION	rtsputils.h	186;"	d
+MAX_DESCR_LENGTH	rtsputils.h	93;"	d
+MAX_PROCESS	rtsputils.h	185;"	d
+MAX_RTP_PKT_LENGTH	rtputils.h	32;"	d
+NMAX	ringfifo.c	13;"	d	file:
+OBJ	Makefile	/^OBJ = $(SRC:%.c=%.o)$/;"	m
+OpenBitstreamFile	ringfifo.c	/^void OpenBitstreamFile()$/;"	f
+PACKAGE	rtsputils.h	103;"	d
+PLAY_STATE	rtsputils.h	98;"	d
+ParseUrl	rtspservice.c	/^int ParseUrl(const char *pUrl, char *pServer, unsigned short *port, char *pFileName, size_t FileNameLen)$/;"	f
+PrefsInit	rtspservice.c	/^void PrefsInit()$/;"	f
+READY_STATE	rtsputils.h	97;"	d
+RR	rtsputils.h	/^    RR=201,$/;"	e	enum:__anon10
+RTCP	rtsputils.h	/^        int RTCP;$/;"	m	struct:__anon5
+RTP	rtsputils.h	/^        int RTP;$/;"	m	struct:__anon5
+RTP_DEFAULT_PORT	rtspservice.c	49;"	d	file:
+RTP_DEFAULT_PORT	rtspservice.h	26;"	d
+RTP_get_port_pair	rtspservice.c	/^int RTP_get_port_pair(port_pair *pair)$/;"	f
+RTP_no_transport	rtsputils.h	/^            RTP_no_transport=0,$/;"	e	enum:__anon6
+RTP_play_action	rtsputils.h	/^typedef unsigned int (*RTP_play_action)(unsigned int u32Rtp, char *pData, int s32DataSize, unsigned int u32TimeStamp);$/;"	t
+RTP_port_pool_init	rtspservice.c	/^void RTP_port_pool_init(int port)$/;"	f
+RTP_rtp_avp	rtsputils.h	/^            RTP_rtp_avp,$/;"	e	enum:__anon6
+RTP_rtp_avp_tcp	rtsputils.h	/^            RTP_rtp_avp_tcp$/;"	e	enum:__anon6
+RTP_session	rtsputils.h	/^}RTP_session;$/;"	t	typeref:struct:_RTP_session
+RTP_transport	rtsputils.h	/^} RTP_transport;$/;"	t	typeref:struct:_RTP_transport
+RTSP_BUFFERSIZE	rtsputils.h	92;"	d
+RTSP_DEBUG	rtspservice.h	25;"	d
+RTSP_EL	rtsputils.h	102;"	d
+RTSP_ID_ANNOUNCE	rtsputils.h	76;"	d
+RTSP_ID_DESCRIBE	rtsputils.h	75;"	d
+RTSP_ID_GET_PARAMETERS	rtsputils.h	77;"	d
+RTSP_ID_OPTIONS	rtsputils.h	78;"	d
+RTSP_ID_PAUSE	rtsputils.h	79;"	d
+RTSP_ID_PLAY	rtsputils.h	80;"	d
+RTSP_ID_RECORD	rtsputils.h	81;"	d
+RTSP_ID_REDIRECT	rtsputils.h	82;"	d
+RTSP_ID_SETUP	rtsputils.h	83;"	d
+RTSP_ID_SET_PARAMETER	rtsputils.h	84;"	d
+RTSP_ID_TEARDOWN	rtsputils.h	85;"	d
+RTSP_METHOD_ANNOUNCE	rtsputils.h	63;"	d
+RTSP_METHOD_DESCRIBE	rtsputils.h	62;"	d
+RTSP_METHOD_GET_PARAMETERS	rtsputils.h	64;"	d
+RTSP_METHOD_MAXLEN	rtsputils.h	61;"	d
+RTSP_METHOD_OPTIONS	rtsputils.h	65;"	d
+RTSP_METHOD_PAUSE	rtsputils.h	66;"	d
+RTSP_METHOD_PLAY	rtsputils.h	67;"	d
+RTSP_METHOD_RECORD	rtsputils.h	68;"	d
+RTSP_METHOD_REDIRECT	rtsputils.h	69;"	d
+RTSP_METHOD_SETUP	rtsputils.h	70;"	d
+RTSP_METHOD_SET_PARAMETER	rtsputils.h	71;"	d
+RTSP_METHOD_TEARDOWN	rtsputils.h	72;"	d
+RTSP_RTP_AVP	rtspservice.c	52;"	d	file:
+RTSP_VER	rtsputils.h	100;"	d
+RTSP_buffer	rtsputils.h	/^} RTSP_buffer;$/;"	t	typeref:struct:_RTSP_buffer
+RTSP_describe	rtspservice.c	/^int RTSP_describe(RTSP_buffer * pRtsp)$/;"	f
+RTSP_discard_msg	rtspservice.c	/^void RTSP_discard_msg(RTSP_buffer * rtsp)$/;"	f
+RTSP_full_msg_rcvd	rtspservice.c	/^int RTSP_full_msg_rcvd(RTSP_buffer *rtsp, int *hdr_len, int *body_len)$/;"	f
+RTSP_handler	rtspservice.c	/^int RTSP_handler(RTSP_buffer *pRtspBuf)$/;"	f
+RTSP_initserver	rtspservice.c	/^void RTSP_initserver(RTSP_buffer *rtsp, int fd)$/;"	f
+RTSP_interlvd_rcvd	rtsputils.h	90;"	d
+RTSP_method_rcvd	rtsputils.h	89;"	d
+RTSP_not_full	rtsputils.h	88;"	d
+RTSP_options	rtspservice.c	/^int RTSP_options(RTSP_buffer * pRtsp)$/;"	f
+RTSP_play	rtspservice.c	/^int RTSP_play(RTSP_buffer * pRtsp)$/;"	f
+RTSP_remove_msg	rtspservice.c	/^void RTSP_remove_msg(int len, RTSP_buffer * rtsp)$/;"	f
+RTSP_session	rtsputils.h	/^} RTSP_session;$/;"	t	typeref:struct:_RTSP_session
+RTSP_setup	rtspservice.c	/^int RTSP_setup(RTSP_buffer * pRtsp)$/;"	f
+RTSP_state_machine	rtspservice.c	/^void RTSP_state_machine(RTSP_buffer * pRtspBuf, int method)$/;"	f
+RTSP_teardown	rtspservice.c	/^int RTSP_teardown(RTSP_buffer * pRtsp)$/;"	f
+RTSP_valid_response_msg	rtspservice.c	/^int RTSP_valid_response_msg(unsigned short *status, RTSP_buffer * rtsp)$/;"	f
+RTSP_validate_method	rtspservice.c	/^int RTSP_validate_method(RTSP_buffer * pRtsp)$/;"	f
+RtpCreate	rtputils.c	/^unsigned int RtpCreate(unsigned int u32IP, int s32Port, EmRtpPayload emPayload)$/;"	f
+RtpDelete	rtputils.c	/^void RtpDelete(unsigned int u32Rtp)$/;"	f
+RtpSend	rtputils.c	/^unsigned int RtpSend(unsigned int u32Rtp, char *pData, int s32DataSize, unsigned int u32TimeStamp)$/;"	f
+RtspServer	rtspservice.c	/^int RtspServer(RTSP_buffer *rtsp)$/;"	f
+SDES	rtsputils.h	/^    SDES=202,\/*Source description items, including CNAME,NAME,EMAIL,etc*\/$/;"	e	enum:__anon10
+SDP_EL	rtspservice.c	50;"	d	file:
+SERVER_RTSP_PORT_DEFAULT	rtsputils.h	233;"	d
+SR	rtsputils.h	/^    SR=200,$/;"	e	enum:__anon10
+SRC	Makefile	/^SRC = $(wildcard *.c)$/;"	m
+ScheduleConnections	rtspservice.c	/^void ScheduleConnections(RTSP_buffer **rtsp_list, int *conn_count)$/;"	f
+ScheduleInit	rtsputils.c	/^int ScheduleInit()$/;"	f
+SendDescribeReply	rtspservice.c	/^int SendDescribeReply(RTSP_buffer * rtsp, char *object, char *descr, char *s8Str)$/;"	f
+SendNalu264	rtputils.c	/^static int SendNalu264(HndRtp hRtp, char *pNalBuf, int s32NalBufSize)$/;"	f	file:
+SendNalu711	rtputils.c	/^static int SendNalu711(HndRtp hRtp, char *buf, int bufsize)$/;"	f	file:
+StFuHdr	rtputils.c	/^}StFuHdr; \/**\/\/* 1 BYTES *\/$/;"	t	typeref:struct:__anon4	file:
+StFuIndicator	rtputils.c	/^}StFuIndicator; \/**\/\/* 1 BYTES *\/$/;"	t	typeref:struct:__anon3	file:
+StNaluHdr	rtputils.c	/^}StNaluHdr; \/**\/\/* 1 BYTES *\/$/;"	t	typeref:struct:__anon2	file:
+StRtpFixedHdr	rtputils.c	/^}StRtpFixedHdr;$/;"	t	typeref:struct:__anon1	file:
+StRtpObj	rtputils.c	/^}StRtpObj, *HndRtp;$/;"	t	typeref:struct:_tagStRtpHandle	file:
+StServPrefs	rtsputils.h	/^} StServPrefs;$/;"	t	typeref:struct:_StServPrefs
+TARGET	Makefile	/^TARGET = test$/;"	m
+UpdatePps	rtspservice.c	/^void UpdatePps(int ch,unsigned char *data,int len)$/;"	f
+UpdateSps	rtspservice.c	/^void UpdateSps(int ch,unsigned char *data,int len)$/;"	f
+VERSION	rtsputils.h	104;"	d
+_RTP_session	rtsputils.h	/^typedef struct _RTP_session {$/;"	s
+_RTP_transport	rtsputils.h	/^typedef struct _RTP_transport$/;"	s
+_RTSP_buffer	rtsputils.h	/^typedef struct _RTSP_buffer {$/;"	s
+_RTSP_session	rtsputils.h	/^typedef struct _RTSP_session {$/;"	s
+_StServPrefs	rtsputils.h	/^typedef struct _StServPrefs {$/;"	s
+__RTPUTILS_DEF_H	rtputils.h	20;"	d
+__RTSPSERVICE_DEF_H	rtspservice.h	20;"	d
+__RTSPUTILS_DEF_H	rtsputils.h	20;"	d
+_g711	rtputils.h	/^	_g711		= 0x200,$/;"	e	enum:__anon11
+_h264	rtputils.h	/^	_h264		= 0x100,$/;"	e	enum:__anon11
+_h264nalu	rtputils.h	/^	_h264nalu,$/;"	e	enum:__anon11
+_mjpeg	rtputils.h	/^	_mjpeg,$/;"	e	enum:__anon11
+_play_args	rtsputils.h	/^typedef struct _play_args$/;"	s
+_schedule_list	rtsputils.h	/^typedef struct _schedule_list$/;"	s
+_tagStRtpHandle	rtputils.c	/^typedef struct _tagStRtpHandle$/;"	s	file:
+add_time_stamp	rtspservice.c	/^void add_time_stamp(char *b, int crlf)$/;"	f
+addring	ringfifo.c	/^int addring (int i)$/;"	f
+base64_encode	rtspservice.c	/^char * base64_encode(const unsigned char * bindata, char * base64, int binlength)$/;"	f
+base64_encode2	rtspservice.c	/^void base64_encode2(char *in, const int in_len, char *out, int out_len)$/;"	f
+base64pps	rtspservice.c	/^	char base64pps[524];$/;"	m	struct:profileid_sps_pps	file:
+base64profileid	rtspservice.c	/^	char base64profileid[10];$/;"	m	struct:profileid_sps_pps	file:
+base64sps	rtspservice.c	/^	char base64sps[524];$/;"	m	struct:profileid_sps_pps	file:
+buffer	ringfifo.h	/^    unsigned char *buffer;$/;"	m	struct:ringbuf
+bwrite	rtsputils.c	/^int bwrite(char *buffer, unsigned short len, RTSP_buffer * rtsp)$/;"	f
+ch	rtsputils.h	/^	int ch;$/;"	m	struct:_RTSP_buffer
+cli_ports	rtsputils.h	/^                port_pair cli_ports;$/;"	m	struct:_RTP_transport::__anon7::__anon8
+cur_state	rtsputils.h	/^    int cur_state;   \/*会话状态*\/$/;"	m	struct:_RTSP_session
+descr	rtsputils.h	/^    char descr[MAX_DESCR_LENGTH];\/*描述*\/$/;"	m	struct:_RTSP_buffer
+emPayload	rtputils.c	/^    EmRtpPayload        emPayload;$/;"	m	struct:_tagStRtpHandle	file:
+end_time	rtsputils.h	/^    float end_time;                                     \/*结束时间*\/$/;"	m	struct:_play_args
+fd	ringfifo.c	/^FILE *fd;$/;"	v
+fd	rtsputils.h	/^    int fd;    \/*socket文件描述符*\/$/;"	m	struct:_RTSP_buffer
+frame_type	ringfifo.h	/^	int frame_type;$/;"	m	struct:ringbuf
+g_s32DoPlay	rtspservice.c	/^int g_s32DoPlay = 0;$/;"	v
+g_s32Maxfd	rtspservice.c	/^int g_s32Maxfd = 0;\/\/最大轮询id号$/;"	v
+g_s32Quit	rtspservice.c	/^int g_s32Quit = 0;\/\/退出全局变量$/;"	v
+get_stat	rtsputils.c	/^const char *get_stat(int err)$/;"	f
+hndRtp	rtsputils.h	/^    struct _tagStRtpHandle *hndRtp;$/;"	m	struct:_RTP_session	typeref:struct:_RTP_session::_tagStRtpHandle
+hostname	rtsputils.h	/^	char hostname[256];$/;"	m	struct:_StServPrefs
+iget	ringfifo.c	/^int iget = 0; \/* �������ĵ�ǰȡ��λ�� *\/$/;"	v
+in_buffer	rtsputils.h	/^    char in_buffer[RTSP_BUFFERSIZE];\/*接收缓冲区*\/$/;"	m	struct:_RTSP_buffer
+in_size	rtsputils.h	/^    unsigned int in_size;\/*接收缓冲区的大小*\/$/;"	m	struct:_RTSP_buffer
+info3	ringfifo.c	/^static int info3=0, info4=0;$/;"	v	file:
+info4	ringfifo.c	/^static int info3=0, info4=0;$/;"	v	file:
+interleaved	rtsputils.h	/^                port_pair interleaved;$/;"	m	struct:_RTP_transport::__anon7::__anon9
+iput	ringfifo.c	/^int iput = 0; \/* ���λ������ĵ�ǰ����λ�� *\/$/;"	v
+is_multicast	rtsputils.h	/^                unsigned char is_multicast;$/;"	m	struct:_RTP_transport::__anon7::__anon8
+log	rtsputils.h	/^	char log[256];$/;"	m	struct:_StServPrefs
+main	main.c	/^int main(void)$/;"	f
+max_session	rtsputils.h	/^	unsigned int max_session;$/;"	m	struct:_StServPrefs
+n	ringfifo.c	/^int n = 0; \/* ���λ������е�Ԫ�������� *\/$/;"	v
+next	rtsputils.h	/^    struct _RTP_session *next;$/;"	m	struct:_RTP_session	typeref:struct:_RTP_session::_RTP_session
+next	rtsputils.h	/^    struct _RTSP_buffer *next; \/*指向下一个结构体，构成了链表结构*\/$/;"	m	struct:_RTSP_buffer	typeref:struct:_RTSP_buffer::_RTSP_buffer
+next	rtsputils.h	/^    struct _RTSP_session *next; \/*下一个会话的指针，构成链表结构*\/$/;"	m	struct:_RTSP_session	typeref:struct:_RTSP_session::_RTSP_session
+num_conn	rtsputils.c	/^int num_conn = 0;    \/*连接个数*\/$/;"	v
+out_buffer	rtsputils.h	/^    char out_buffer[RTSP_BUFFERSIZE+MAX_DESCR_LENGTH];\/*发送缓冲区*\/$/;"	m	struct:_RTSP_buffer
+out_size	rtsputils.h	/^    int out_size;\/*发送缓冲区大小*\/$/;"	m	struct:_RTSP_buffer
+pFuHdr	rtputils.c	/^    StFuHdr             *pFuHdr;$/;"	m	struct:_tagStRtpHandle	file:
+pFuInd	rtputils.c	/^    StFuIndicator       *pFuInd;$/;"	m	struct:_tagStRtpHandle	file:
+pNaluFile	rtputils.c	/^    FILE                *pNaluFile;$/;"	m	struct:_tagStRtpHandle	file:
+pNaluHdr	rtputils.c	/^    StNaluHdr           *pNaluHdr;$/;"	m	struct:_tagStRtpHandle	file:
+pRtpFixedHdr	rtputils.c	/^    StRtpFixedHdr       *pRtpFixedHdr;$/;"	m	struct:_tagStRtpHandle	file:
+pause	rtsputils.h	/^    unsigned char pause;$/;"	m	struct:_RTP_session
+play_action	rtsputils.h	/^    RTP_play_action play_action;$/;"	m	struct:_schedule_list
+playback_time	rtsputils.h	/^    struct tm playback_time;                    \/*回放时间*\/$/;"	m	struct:_play_args	typeref:struct:_play_args::tm
+playback_time_valid	rtsputils.h	/^    short playback_time_valid;                 \/*回放时间是否合法*\/$/;"	m	struct:_play_args
+port	rtsputils.h	/^	unsigned int port;$/;"	m	struct:_StServPrefs
+port	rtsputils.h	/^    unsigned int port;\/*端口号*\/$/;"	m	struct:_RTSP_buffer
+port_pair	rtsputils.h	/^} port_pair;$/;"	t	typeref:struct:__anon5
+profileid_sps_pps	rtspservice.c	/^struct profileid_sps_pps{$/;"	s	file:
+psp	rtspservice.c	/^struct profileid_sps_pps psp; $/;"	v	typeref:struct:profileid_sps_pps
+ringbuf	ringfifo.h	/^struct ringbuf {$/;"	s
+ringfifo	ringfifo.c	/^struct ringbuf ringfifo[NMAX];$/;"	v	typeref:struct:ringbuf
+ringfree	ringfifo.c	/^void ringfree()$/;"	f
+ringget	ringfifo.c	/^int ringget(struct ringbuf *getinfo)$/;"	f
+ringmalloc	ringfifo.c	/^void ringmalloc(int size)$/;"	f
+ringput	ringfifo.c	/^void ringput(unsigned char *buffer,int size,int encode_type)$/;"	f
+ringreset	ringfifo.c	/^void ringreset()$/;"	f
+rtcp_pkt_type	rtsputils.h	/^} rtcp_pkt_type;$/;"	t	typeref:enum:__anon10
+rtp_fd	rtsputils.h	/^    int rtp_fd;$/;"	m	struct:_RTP_transport
+rtp_session	rtsputils.h	/^    RTP_session *rtp_session; \/*RTP会话*\/$/;"	m	struct:_RTSP_session
+rtp_session	rtsputils.h	/^    RTP_session *rtp_session;$/;"	m	struct:_schedule_list
+rtp_type	rtsputils.h	/^        } rtp_type;$/;"	t	typeref:enum:__anon6
+rtsp_cseq	rtsputils.h	/^    unsigned int rtsp_cseq;\/*序列号*\/$/;"	m	struct:_RTSP_buffer
+s32Sock	rtputils.c	/^    int                 s32Sock;$/;"	m	struct:_tagStRtpHandle	file:
+s_u32StartPort	rtspservice.c	/^uint32_t s_u32StartPort=RTP_DEFAULT_PORT;$/;"	v
+s_uPortPool	rtspservice.c	/^uint32_t s_uPortPool[MAX_CONNECTION];\/\/RTP端口$/;"	v
+sched	rtsputils.c	/^stScheList sched[MAX_CONNECTION];$/;"	v
+sched_id	rtsputils.h	/^    int sched_id;$/;"	m	struct:_RTP_session
+schedule_add	rtsputils.c	/^int schedule_add(RTP_session *rtp_session)$/;"	f
+schedule_do	rtsputils.c	/^void *schedule_do(void *nothing)$/;"	f
+schedule_remove	rtsputils.c	/^int schedule_remove(int id)$/;"	f
+schedule_start	rtsputils.c	/^int schedule_start(int id,stPlayArgs *args)$/;"	f
+schedule_stop	rtsputils.c	/^void schedule_stop(int id)$/;"	f
+send_options_reply	rtspservice.c	/^int send_options_reply(RTSP_buffer * pRtsp, long cseq)$/;"	f
+send_play_reply	rtspservice.c	/^int send_play_reply(RTSP_buffer * pRtsp, RTSP_session * pRtspSessn)$/;"	f
+send_reply	rtsputils.c	/^int send_reply(int err, char *addon, RTSP_buffer * rtsp)$/;"	f
+send_setup_reply	rtspservice.c	/^int send_setup_reply(RTSP_buffer *pRtsp, RTSP_session *pSession, RTP_session *pRtpSes)$/;"	f
+send_teardown_reply	rtspservice.c	/^int send_teardown_reply(RTSP_buffer * pRtsp, long SessionId, long cseq)$/;"	f
+ser_ports	rtsputils.h	/^                port_pair ser_ports;$/;"	m	struct:_RTP_transport::__anon7::__anon8
+serv_root	rtsputils.h	/^	char serv_root[256];$/;"	m	struct:_StServPrefs
+session_id	rtsputils.h	/^    int session_id; \/*会话的ID*\/$/;"	m	struct:_RTSP_session
+session_list	rtsputils.h	/^    RTSP_session *session_list;\/*会话链表*\/$/;"	m	struct:_RTSP_buffer
+size	ringfifo.h	/^    int size;$/;"	m	struct:ringbuf
+sock_ntop_host	rtsputils.c	/^char *sock_ntop_host(const struct sockaddr *sa, socklen_t salen, char *str, size_t len)$/;"	f
+stClientAddr	rtsputils.h	/^    struct sockaddr stClientAddr;$/;"	m	struct:_RTSP_buffer	typeref:struct:_RTSP_buffer::sockaddr
+stPlayArgs	rtsputils.h	/^} stPlayArgs;$/;"	t	typeref:struct:_play_args
+stPrefs	rtspservice.c	/^StServPrefs stPrefs;$/;"	v
+stScheList	rtsputils.h	/^} stScheList;$/;"	t	typeref:struct:_schedule_list
+stServAddr	rtputils.c	/^    struct sockaddr_in  stServAddr;$/;"	m	struct:_tagStRtpHandle	typeref:struct:_tagStRtpHandle::sockaddr_in	file:
+start_time	rtsputils.h	/^    float start_time;                                   \/*开始时间*\/$/;"	m	struct:_play_args
+start_time_valid	rtsputils.h	/^    short start_time_valid;                        \/*开始时间是否合法*\/$/;"	m	struct:_play_args
+started	rtsputils.h	/^    unsigned char started;$/;"	m	struct:_RTP_session
+stop_schedule	rtsputils.c	/^int stop_schedule = 0;\/\/是否退出schedule$/;"	v
+tcp	rtsputils.h	/^                } tcp;$/;"	m	union:_RTP_transport::__anon7	typeref:struct:_RTP_transport::__anon7::__anon9
+tcp_accept	rtsputils.c	/^int tcp_accept(int fd)$/;"	f
+tcp_close	rtsputils.c	/^void tcp_close(int s)$/;"	f
+tcp_connect	rtsputils.c	/^int tcp_connect(unsigned short port, char *addr)$/;"	f
+tcp_listen	rtsputils.c	/^int tcp_listen(unsigned short port)$/;"	f
+tcp_read	rtsputils.c	/^int tcp_read(int fd, void *buffer, int nbytes, struct sockaddr *Addr)$/;"	f
+tcp_write	rtsputils.c	/^int tcp_write(int connectSocketId, char *dataBuf, int dataSize)$/;"	f
+test_fist	ringfifo.c	/^int test_fist=0;$/;"	v
+trace_point	rtsputils.h	28;"	d
+transport	rtsputils.h	/^    RTP_transport transport;$/;"	m	struct:_RTP_session
+type	rtsputils.h	/^    rtp_type type;$/;"	m	struct:_RTP_transport
+u	rtsputils.h	/^        } u;$/;"	m	struct:_RTP_transport	typeref:union:_RTP_transport::__anon7
+u16SeqNum	rtputils.c	/^    unsigned short      u16SeqNum;$/;"	m	struct:_tagStRtpHandle	file:
+u16SeqNum	rtputils.c	/^    unsigned short u16SeqNum;$/;"	m	struct:__anon1	file:
+u1E	rtputils.c	/^    unsigned char u1E:1;$/;"	m	struct:__anon4	file:
+u1Externsion	rtputils.c	/^    unsigned char u1Externsion:1;   \/**\/\/* expect 1, see RTP_OP below *\/$/;"	m	struct:__anon1	file:
+u1F	rtputils.c	/^    unsigned char u1F:1;$/;"	m	struct:__anon2	file:
+u1F	rtputils.c	/^    unsigned char u1F:1;$/;"	m	struct:__anon3	file:
+u1Marker	rtputils.c	/^    unsigned char u1Marker:1;       \/**\/\/* expect 1 *\/$/;"	m	struct:__anon1	file:
+u1Padding	rtputils.c	/^    unsigned char u1Padding:1;      \/**\/\/* expect 0 *\/$/;"	m	struct:__anon1	file:
+u1R	rtputils.c	/^    unsigned char u1R:1;$/;"	m	struct:__anon4	file:
+u1S	rtputils.c	/^    unsigned char u1S:1;$/;"	m	struct:__anon4	file:
+u2Nri	rtputils.c	/^    unsigned char u2Nri:2;$/;"	m	struct:__anon2	file:
+u2Nri	rtputils.c	/^    unsigned char u2Nri:2;$/;"	m	struct:__anon3	file:
+u2Version	rtputils.c	/^    unsigned char u2Version:2;      \/**\/\/* expect 2 *\/$/;"	m	struct:__anon1	file:
+u32CurrTime	rtputils.c	/^    unsigned long long      u32CurrTime;$/;"	m	struct:_tagStRtpHandle	file:
+u32PrevTime	rtputils.c	/^    unsigned long long      u32PrevTime;$/;"	m	struct:_tagStRtpHandle	file:
+u32SSrc	rtputils.c	/^    unsigned int        u32SSrc;$/;"	m	struct:_tagStRtpHandle	file:
+u32SSrc	rtputils.c	/^    unsigned long u32SSrc;          \/**\/\/* stream number is used here. *\/$/;"	m	struct:__anon1	file:
+u32TimeStamp	rtputils.c	/^    unsigned long u32TimeStamp;$/;"	m	struct:__anon1	file:
+u32TimeStampCurr	rtputils.c	/^    unsigned long long        u32TimeStampCurr;$/;"	m	struct:_tagStRtpHandle	file:
+u32TimeStampInc	rtputils.c	/^    unsigned long long        u32TimeStampInc;$/;"	m	struct:_tagStRtpHandle	file:
+u4CSrcLen	rtputils.c	/^    unsigned char u4CSrcLen:4;      \/**\/\/* expect 0 *\/$/;"	m	struct:__anon1	file:
+u5Type	rtputils.c	/^    unsigned char u5Type:5;$/;"	m	struct:__anon2	file:
+u5Type	rtputils.c	/^    unsigned char u5Type:5;$/;"	m	struct:__anon3	file:
+u5Type	rtputils.c	/^    unsigned char u5Type:5;$/;"	m	struct:__anon4	file:
+u7Payload	rtputils.c	/^    unsigned char u7Payload:7;      \/**\/\/* RTP_PAYLOAD_RTSP *\/$/;"	m	struct:__anon1	file:
+udp	rtsputils.h	/^            } udp;$/;"	m	union:_RTP_transport::__anon7	typeref:struct:_RTP_transport::__anon7::__anon8
+valid	rtsputils.h	/^    int valid;$/;"	m	struct:_schedule_list
