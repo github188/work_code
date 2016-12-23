@@ -1,5 +1,5 @@
 /********************************************************************
-* $ID: main.c               Mon 2016-09-19 15:27:41 +0800  lz       *
+* $ID: epoll.h              Thu 2016-10-20 15:10:24 +0800  lz       *
 *                                                                   *
 * Description:                                                      *
 *                                                                   *
@@ -16,76 +16,45 @@
 *                                                                   *
 * No warranty, no liability, use this at your own risk!             *
 ********************************************************************/
+#ifndef  __EPOLL_DEF_H
+#define  __EPOLL_DEF_H
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
-#include <string.h> 
+#include <stdarg.h>
+#include <errno.h>
+#include <sys/epoll.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-#include <signal.h>
-#include <pthread.h>
-#include <sys/ioctl.h>
-#include <net/if.h>
-
+#include <sys/socket.h>
 #include "printdef.h"
-#include "public.h"
+#include <netinet/in.h>
+#include <arpa/inet.h>
 
-ProgInfo gProgInfo;
-int g_log_level = 0x000F;
+#define MAX_USER_CONNECTED     (4)
+#define MAX_BUFFER_SIZE        (1024)
 
-int main(int argc, char *argv[])
-{
-	ProgIPtr prog = &gProgInfo;
-	PVERSION("mbox prog");
+#define EVENT_COUNT            (8)
 
-	//TCP server close, but we send(...), it will Broken Pipe
-	signal(SIGPIPE, SIG_IGN);
+typedef struct tagUSERINFO{
+    int sockfd;
+    unsigned short recvLen,verified;
+    unsigned char recvBuf[MAX_BUFFER_SIZE];
+	time_t        lastheart;   // 用来标记最后一次收到心跳反馈的时间
+}UserInfo, *UserIPtr;
 
-	memset(prog, 0, sizeof(ProgInfo));
+typedef struct tagPROGINFO{
+    int            fdListen;
+    UserInfo       users[MAX_USER_CONNECTED];
+    int            epollfd;
+    struct epoll_event  events[EVENT_COUNT];
+}ProgInfo, *ProgIPtr;
 
-	//加载配置文件
-	prm_Default(&prog->param);
+extern ProgInfo gProgInfo;
+int netio_main_tcpserver(ProgIPtr prog);
 
-	//获取设备串口号
-	prm_SetBoard(&prog->param);
-	prog->iExit = 0;
-
-	//create listen socket
-	if(netio_create_tcpserver(prog) == -1)
-	{
-		PERROR("Create socket failed!\n");
-		return -1;
-	}
-	
-	//打开串口创建串口连接
-	prog->ttyfd = serial_open("ttymxc1");
-	serial_new_connect(prog, prog->ttyfd);
-
-	prog->iMainState = STATE_MCU_VER;
-
-	while(1)
-	{
-		misc_update_time();
-		prog->msecNow = misc_current_time();
-
-		if(netio_main_tcpserver(prog) == 0){}
-#if 0	
-		switch(prog->iMainState) {
-			case STATE_MCU_VER:
-				if((prog->msecNow - prog->msecSend) > 2000) {
-					SendSerialCmd(prog, CMD_ASK_VERSION, NULL, 0);
-					prog->msecSend = prog->msecNow;
-				}
-				break;
-		}
-#endif
-	}
-
-
-}
-
-
-
-/********************* End Of File: main.c *********************/
+#endif// __EPOLL_DEF_H
+/********************* End Of File: epoll.h *********************/

@@ -26,7 +26,7 @@
 #define PRINT_MESSG             // print message for user success
 #define PRINT_ASSERT            // test some is not null
 
-#define PRINT_PRONAME          "[centctrl] "
+#define PRINT_PRONAME          "[epoll] "
 
 enum {PLOG_NONE=0x00, PLOG_ERROR=0x01, PLOG_TIMER=0x02, PLOG_MESSAGE=0x04, PLOG_FUNC=0x08, 
     PLOG_PROTO_N=0x10, PLOG_PROTO_B=0x20, PLOG_TEMP=0x80, PLOG_DEBUG=0x80, PLOG_BATDATA=0x100, };

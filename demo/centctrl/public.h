@@ -110,20 +110,20 @@ typedef struct tagPROGINFO{
 typedef struct tagNETPROTOCOL {
 	unsigned char  magic0;           // 恒定为0xAA
 	unsigned char  magic1;           // 恒定为0x55
-	unsigned short cmdlen;           // 本条命令的长度
-	unsigned char  command;          // 命令字，命令字的最高位为1，表示反馈命令
 	unsigned char  checksum;         // 将本字段设置为0时,所有INT之和取BYTE。
+	unsigned char  command;          // 命令字，命令字的最高位为1，表示反馈命令
+	unsigned short cmdlen;           // 本条命令的长度
 	unsigned short cmdseq;           // 命令序号，发送端标志，返回命令保持不变
 
 	unsigned char  dat[NPTO_MAX_SIZE-NPTO_HEAD_SIZE];
 }NetProto, *NetPtoPtr;
 
 enum {
-	CMD_ASK_VERSION  = 0x01,            //请求获取MCU的软件及硬件版本号
+	CMD_ASK_VERSION  = 0x00,            //请求获取MCU的软件及硬件版本号
 	CMD_ASK_UPGRADE,                    //核心板发送本命令，使得MCU进入升级模式。
 	CMD_SEND_UPDATA,                    //核心板给MCU发送升级数据块
 	CMD_SEND_VERSION,                   //核心板发送版本号给MCU
-	CMD_GET_VERSION  = 0x81,            //得到MCU反馈的版本号
+	CMD_GET_VERSION  = 0x80,            //得到MCU反馈的版本号
 	CMD_GET_UPGRADE,                    //获取基板升级数据应答
 	CMD_GET_UPDATARE,                   //获取MUC数据接收与写入的情况
 	CMD_GET_VERSIONRE,                   //获取MCU是否成功接收版本号

@@ -1,5 +1,5 @@
 /********************************************************************
-* $ID: main.c               Wed 2016-09-28 10:37:35 +0800  lz       *
+* $ID: getenv.c             Thu 2016-10-20 11:18:08 +0800  lz       *
 *                                                                   *
 * Description:                                                      *
 *                                                                   *
@@ -16,60 +16,52 @@
 *                                                                   *
 * No warranty, no liability, use this at your own risk!             *
 ********************************************************************/
-#include <stdio.h>
+/*
+
+头文件：#include <stdlib.h>
+
+定义函数：char * getenv(const char *name);
+
+函数说明：getenv()用来取得参数name 环境变量的内容. 参数name 为环境变量的名称, 如果该变量存在则会返回指向该内容的指针. 环境变量的格式为name＝value.
+
+返回值：执行成功则返回指向该内容的指针, 找不到符合的环境变量名称则返回NULL.
+
+范例
 #include <stdlib.h>
-#include <string.h>
-// 192.168.1.22 -->C0 A8 01 16
-int prm_netip_2_binary(unsigned char *dst, const char *src)
+main()
 {
-    int i, cnt = 4;; 
-    char *ptr = (char*)src;
-
-    if(!dst || !src) return -1; 
-
-    for(i = 0; i < cnt; i++) {
-    dst[i] = (unsigned char)strtol(ptr, (char**)NULL, 10);
-
-    if((ptr = index(ptr, '.'))) ptr += 1;
-    else break;
-    }   
-
-    return (i >= cnt) ? 0 : -2; 
+   char *p;
+   if((p = getenv("USER")))
+   printf("USER = %s\n", p);
 }
 
-// aa:bb:cc:dd:dd:ee  -->AA BB CC DD DD EE
-int prm_netmac_2_binary(unsigned char *dst, const char *src)
+执行：
+USER = root * */
+
+const int prm_Default_fromENV(const char *env, char *obuf)
 {
-    int i, cnt = 6;; 
-    char *ptr = (char*)src;
+    char *ptr;
 
-    if(!dst || !src) return -1; 
+    ASSERT(env);
+    ptr = getenv(env);
 
-    for(i = 0; i < cnt; i++) {
-    dst[i] = (unsigned char)strtol(ptr, (char**)NULL, 16);
+    if(!strncasecmp(env, "mac", 3)) {
+    if(!ptr) ptr = "00:00:22:22:22:22";
+    snprintf(obuf, 18+1, "%s", ptr);
+    }
+    else if(!strncasecmp(env, "hwver", 5)) {
+    if(!ptr) ptr = "V1.01";
+    snprintf(obuf, 9, "%s", ptr);
+    }
+    else if(!strncasecmp(env, "hwdate", 6)) {
+    if(!ptr) ptr = "20121212";
+    snprintf(obuf, 9, "%s", ptr);
+    }
+    else snprintf(obuf, 64, "%s", ptr);
 
-    if((ptr = index(ptr, ':'))) ptr += 1;
-    else break;
-    }   
-
-    return (i >= cnt) ? 0 : -2; 
+    return 0;
 }
 
 
-int main()
-{
-	int i;
-	char *date = "192.168.1.22";
-	unsigned char dst[6];
-	memset(dst,0,6);
 
-	prm_netip_2_binary(dst,date);
-
-	for(i = 0 ; i< 6 ; i++)
-	{
-		printf("[%x] ",dst[i]);
-	}
-	printf("\n");
-}
-
-/********************* End Of File: main.c *********************/
+/******************** End Of File: getenv.c ********************/

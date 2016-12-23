@@ -20,21 +20,18 @@
 
 #define POLY              (0x8C)
 
-//CRC-8校验
-unsigned char CRC8(unsigned char *ptr, unsigned short len)
+int npto_CRC(void *src, int ilen)
 {
-    unsigned char crc = 0;
-    unsigned char i;
-    while(len--) {
-        crc ^=*ptr++;
-        for(i = 0; i < 8; i++) {
-            if(crc & 0x01) {
-                crc = (crc >> 1) ^ POLY;
-            }else crc >>= 1;
-        }   
-    }   
-    return crc;
+	int i;
+	unsigned char crc = 0, *ptr = (unsigned char*)src;
+
+	for(i = 0 ; i < ilen; i++) {
+		crc += ptr[i];
+	}
+
+	return crc;
 }
+
 
 
 int npto_Parse(void *src, int ilen, NetPtoPtr cmdPkt, int *olen, int *result)
@@ -89,9 +86,9 @@ int npto_Parse(void *src, int ilen, NetPtoPtr cmdPkt, int *olen, int *result)
 	memcpy(cmdPkt->dat, &ptr[i+NPTO_HEAD_SIZE], cmdPkt->cmdlen-NPTO_HEAD_SIZE);
 	checksum = cmdPkt->checksum;
 	cmdPkt->checksum = 0;
-	unsigned char  xx = CRC8(cmdPkt, cmdPkt->cmdlen);
+	unsigned char  xx = npto_CRC(cmdPkt, cmdPkt->cmdlen);
 	printf("cmd=%x CRC8=%x\n",cmdPkt->command,xx);
-	if(checksum != CRC8(cmdPkt, cmdPkt->cmdlen)) {
+	if(checksum != npto_CRC(cmdPkt, cmdPkt->cmdlen)) {
 		*olen = i + 2;
 		*result = NPTO_PARSE_RESULT_ERRCRC;
 		return -NPTO_PARSE_RESULT_ERRCRC;
@@ -114,15 +111,15 @@ int npto_GenerateRaw(void *obuf, int *olen, int cmd, unsigned int cmdseq,
 	cmdPkt->cmdseq    = cmdseq;
 
 	memcpy(cmdPkt->dat, extdat, extlen);
-	if((tmp =(extlen % 4)) > 0) {         // 命令长度为4的倍数
+/*	if((tmp =(extlen % 4)) > 0) {         // 命令长度为4的倍数
 		tmp = 4 - tmp;
 		memset(&cmdPkt->dat[extlen], 0, tmp);
 		extlen += tmp;    
-	}   
+	}   */
 
 	cmdPkt->cmdlen    = NPTO_HEAD_SIZE + extlen;
 	cmdPkt->checksum  = 0;
-	cmdPkt->checksum = CRC8(obuf,  cmdPkt->cmdlen);
+	cmdPkt->checksum = npto_CRC(obuf,  cmdPkt->cmdlen);
 
 	*olen = cmdPkt->cmdlen;
 	return 0;

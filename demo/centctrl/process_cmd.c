@@ -36,50 +36,26 @@ static void reg_cmd_proc(unsigned char command, fcmd_proc fproc)
 
 static int proc_mcu_version(ProgIPtr prog, int n, NetPtoPtr pcmd)
 {
-    FILE * file;
-    int len;
-    int i;
-    unsigned char DataBuffer[25];
-    unsigned char version[12];
-    unsigned char recv_version[12];
-    printf("-----------------\n");
-    file = fopen("/lib/ko/version.txt", "r");
-    if(file == NULL)
-    {   
-        printf("file open error!\n");
-        return -1; 
-    }   
-    len = fread(DataBuffer,1,sizeof(DataBuffer),file); //读取文件到DataBuffer中
-    printf("file size ->%d \n",len);
-    fclose(file);
+	int ret;
+	unsigned char extdat[1];
+	memset(extdat,0,1);
 
-    memcpy(version, DataBuffer,12);
-    memcpy(recv_version, pcmd->dat,12);
-    
-    printf("version= %s recv_version= %s\n", version, recv_version);
-    for(i=0;i<12;i++)
-    {   
-        printf("[%x]",version[i]);
-    }   
-    printf("\n");
-    for(i=0;i<12;i++)
-    {   
-        printf("[%x]",recv_version[i]);
-    }   
-    printf("\n");
-    if(memcmp(version,recv_version,12) !=0)
-    {   
-        printf("update wait ok \n");
-        prog->iMainState = STATE_MCU_VER;
-        prog->upg_offset = 0;
-    }   
-    else
-    {   
-		printf("version like \n");
-        prog->iMainState = STATE_MCU_VER;
-    }   
-    return 0;	
+	extdat[0]=pcmd->dat[0];
+	npto_GenerateRaw(prog->sendBuf, &prog->sendBufLen, 0x00 , pcmd->cmdseq, extdat, 1); 
+
+	ret = write(prog->ttyfd, prog->sendBuf, prog->sendBufLen);
+	PFUNC("Send %d ret=%d\n", prog->sendBufLen, ret);
+
+		 
+	return 0;	
 }
+
+static int proc_mcu_version_version(ProgIPtr prog, int n, NetPtoPtr pcmd)
+{
+	PFUNC("-----------OK!\n");
+	return 0;
+}
+
 
 int process_command(ProgIPtr prog, int n, NetPtoPtr pcmd)
 {
@@ -96,6 +72,7 @@ int process_command(ProgIPtr prog, int n, NetPtoPtr pcmd)
 void register_all_command(void)
 {
 	reg_cmd_proc(CMD_GET_VERSION, proc_mcu_version);
+	reg_cmd_proc(CMD_ASK_VERSION, proc_mcu_version_version);
 }
 
 int SendSerialCmd(ProgIPtr prog, int command, unsigned char *extdat, int extlen)

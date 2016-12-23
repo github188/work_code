@@ -1,0 +1,64 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ASSERT	printdef.h	144;"	d
+ASSERT	printdef.h	149;"	d
+DATA_TIME_NOW	printdef.h	38;"	d
+DATA_TIME_NOW	printdef.h	48;"	d
+PBATR	printdef.h	118;"	d
+PBATR	printdef.h	95;"	d
+PBATS	printdef.h	103;"	d
+PBATS	printdef.h	117;"	d
+PDEBUG	printdef.h	122;"	d
+PDEBUG	printdef.h	129;"	d
+PERROR	printdef.h	58;"	d
+PERROR	printdef.h	67;"	d
+PFUNC	printdef.h	114;"	d
+PFUNC	printdef.h	71;"	d
+PLOG_BATDATA	printdef.h	/^    PLOG_PROTO_N=0x10, PLOG_PROTO_B=0x20, PLOG_TEMP=0x80, PLOG_DEBUG=0x80, PLOG_BATDATA=0x100, };$/;"	e	enum:__anon1
+PLOG_DEBUG	printdef.h	/^    PLOG_PROTO_N=0x10, PLOG_PROTO_B=0x20, PLOG_TEMP=0x80, PLOG_DEBUG=0x80, PLOG_BATDATA=0x100, };$/;"	e	enum:__anon1
+PLOG_ERROR	printdef.h	/^enum {PLOG_NONE=0x00, PLOG_ERROR=0x01, PLOG_TIMER=0x02, PLOG_MESSAGE=0x04, PLOG_FUNC=0x08, $/;"	e	enum:__anon1
+PLOG_FUNC	printdef.h	/^enum {PLOG_NONE=0x00, PLOG_ERROR=0x01, PLOG_TIMER=0x02, PLOG_MESSAGE=0x04, PLOG_FUNC=0x08, $/;"	e	enum:__anon1
+PLOG_MESSAGE	printdef.h	/^enum {PLOG_NONE=0x00, PLOG_ERROR=0x01, PLOG_TIMER=0x02, PLOG_MESSAGE=0x04, PLOG_FUNC=0x08, $/;"	e	enum:__anon1
+PLOG_NONE	printdef.h	/^enum {PLOG_NONE=0x00, PLOG_ERROR=0x01, PLOG_TIMER=0x02, PLOG_MESSAGE=0x04, PLOG_FUNC=0x08, $/;"	e	enum:__anon1
+PLOG_PROTO_B	printdef.h	/^    PLOG_PROTO_N=0x10, PLOG_PROTO_B=0x20, PLOG_TEMP=0x80, PLOG_DEBUG=0x80, PLOG_BATDATA=0x100, };$/;"	e	enum:__anon1
+PLOG_PROTO_N	printdef.h	/^    PLOG_PROTO_N=0x10, PLOG_PROTO_B=0x20, PLOG_TEMP=0x80, PLOG_DEBUG=0x80, PLOG_BATDATA=0x100, };$/;"	e	enum:__anon1
+PLOG_TEMP	printdef.h	/^    PLOG_PROTO_N=0x10, PLOG_PROTO_B=0x20, PLOG_TEMP=0x80, PLOG_DEBUG=0x80, PLOG_BATDATA=0x100, };$/;"	e	enum:__anon1
+PLOG_TIMER	printdef.h	/^enum {PLOG_NONE=0x00, PLOG_ERROR=0x01, PLOG_TIMER=0x02, PLOG_MESSAGE=0x04, PLOG_FUNC=0x08, $/;"	e	enum:__anon1
+PMSG	printdef.h	133;"	d
+PMSG	printdef.h	140;"	d
+PNES	printdef.h	116;"	d
+PNET	printdef.h	115;"	d
+PNETR	printdef.h	78;"	d
+PNETS	printdef.h	87;"	d
+PRINT_ASSERT	printdef.h	27;"	d
+PRINT_DEBUG	printdef.h	25;"	d
+PRINT_ERROR	printdef.h	23;"	d
+PRINT_FUNC	printdef.h	24;"	d
+PRINT_MESSG	printdef.h	26;"	d
+PRINT_PRONAME	printdef.h	29;"	d
+PRINT_TIME	printdef.h	22;"	d
+PVERSION	printdef.h	51;"	d
+ProgIPtr	epoll.h	/^}ProgInfo, *ProgIPtr;$/;"	t	typeref:struct:tagPROGINFO
+ProgInfo	epoll.h	/^}ProgInfo, *ProgIPtr;$/;"	t	typeref:struct:tagPROGINFO
+UserIPtr	epoll.h	/^}UserInfo, *UserIPtr;$/;"	t	typeref:struct:tagUSERINFO
+UserInfo	epoll.h	/^}UserInfo, *UserIPtr;$/;"	t	typeref:struct:tagUSERINFO
+__EPOLL_DEF_H	epoll.h	20;"	d
+__PRINTDEF_DEF_H	printdef.h	20;"	d
+epollfd	epoll.h	/^    int            epollfd;$/;"	m	struct:tagPROGINFO
+events	epoll.h	/^    struct epoll_event  events[8];$/;"	m	struct:tagPROGINFO	typeref:struct:tagPROGINFO::epoll_event
+fdListen	epoll.h	/^    int            fdListen;$/;"	m	struct:tagPROGINFO
+gProgInfo	epoll_cp.c	/^ProgInfo gProgInfo;$/;"	v
+g_log_level	epoll_cp.c	/^int g_log_level = 0x000F;$/;"	v
+main	epoll_cp.c	/^int main(int argc, char *argv[])$/;"	f
+netio_main_tcpserver	epoll_cp.c	/^int netio_main_tcpserver(ProgIPrt prog)$/;"	f
+recvBuf	epoll.h	/^    unsigned char recvBuf[1024];$/;"	m	struct:tagUSERINFO
+recvLen	epoll.h	/^    unsigned short recvLen,verified;$/;"	m	struct:tagUSERINFO
+sockfd	epoll.h	/^    int sockfd;$/;"	m	struct:tagUSERINFO
+tagPROGINFO	epoll.h	/^typedef struct tagPROGINFO{$/;"	s
+tagUSERINFO	epoll.h	/^typedef struct tagUSERINFO{$/;"	s
+users	epoll.h	/^    UserInfo       users[4];$/;"	m	struct:tagPROGINFO
+verified	epoll.h	/^    unsigned short recvLen,verified;$/;"	m	struct:tagUSERINFO

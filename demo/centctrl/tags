@@ -7,28 +7,37 @@
 ASSERT	printdef.h	144;"	d
 ASSERT	printdef.h	149;"	d
 CMD_ASK_UPGRADE	public.h	/^	CMD_ASK_UPGRADE,                    \/\/核心板发送本命令，使得MCU进入升级模式。$/;"	e	enum:__anon3
-CMD_ASK_VERSION	public.h	/^	CMD_ASK_VERSION  = 0x01,            \/\/请求获取MCU的软件及硬件版本号$/;"	e	enum:__anon3
+CMD_ASK_VERSION	public.h	/^	CMD_ASK_VERSION  = 0x00,            \/\/请求获取MCU的软件及硬件版本号$/;"	e	enum:__anon3
 CMD_GET_UPDATARE	public.h	/^	CMD_GET_UPDATARE,                   \/\/获取MUC数据接收与写入的情况$/;"	e	enum:__anon3
 CMD_GET_UPGRADE	public.h	/^	CMD_GET_UPGRADE,                    \/\/获取基板升级数据应答$/;"	e	enum:__anon3
-CMD_GET_VERSION	public.h	/^	CMD_GET_VERSION  = 0x81,            \/\/得到MCU反馈的版本号$/;"	e	enum:__anon3
-CMD_GET_VERSIONRE	public.h	/^	CMD_GET_VERSIONRE                   \/\/获取MCU是否成功接收版本号$/;"	e	enum:__anon3
+CMD_GET_VERSION	public.h	/^	CMD_GET_VERSION  = 0x80,            \/\/得到MCU反馈的版本号$/;"	e	enum:__anon3
+CMD_GET_VERSIONRE	public.h	/^	CMD_GET_VERSIONRE,                   \/\/获取MCU是否成功接收版本号$/;"	e	enum:__anon3
 CMD_SEND_UPDATA	public.h	/^	CMD_SEND_UPDATA,                    \/\/核心板给MCU发送升级数据块$/;"	e	enum:__anon3
 CMD_SEND_VERSION	public.h	/^	CMD_SEND_VERSION,                   \/\/核心板发送版本号给MCU$/;"	e	enum:__anon3
 CloseCom	rs232.c	/^int CloseCom(int handle)$/;"	f
 DATA_TIME_NOW	printdef.h	38;"	d
 DATA_TIME_NOW	printdef.h	48;"	d
-EVENT_COUNT	public.h	36;"	d
+DEF_IP	public.h	46;"	d
+DEF_PORT	public.h	45;"	d
+EVENT_COUNT	public.h	43;"	d
 EXEC	Makefile	/^EXEC=ttytest$/;"	m
 GetBaudRate	rs232.c	/^static long GetBaudRate(long baudRate)$/;"	f	file:
-MAX_BUFFER_SIZE	public.h	33;"	d
-MAX_USER_CONNECTED	public.h	34;"	d
-NPTO_HEAD_SIZE	public.h	90;"	d
-NPTO_MAGIC0	public.h	88;"	d
-NPTO_MAGIC1	public.h	89;"	d
-NPTO_MAX_SIZE	public.h	91;"	d
+HEART_TIME	public.h	50;"	d
+MAX_BUFFER_SIZE	public.h	40;"	d
+MAX_CMD_NUM	public.h	49;"	d
+MAX_USER_CONNECTED	public.h	41;"	d
+NPTO_HEAD_SIZE	public.h	105;"	d
+NPTO_MAGIC0	public.h	103;"	d
+NPTO_MAGIC1	public.h	104;"	d
+NPTO_MAX_SIZE	public.h	106;"	d
+NPTO_PARSE_RESULT_ERRCRC	public.h	/^	NPTO_PARSE_RESULT_ERRCRC,        \/\/ 命令校验出错$/;"	e	enum:__anon4
+NPTO_PARSE_RESULT_NOMAGIC	public.h	/^	NPTO_PARSE_RESULT_NOMAGIC=101,   \/\/ 没找到协议头$/;"	e	enum:__anon4
+NPTO_PARSE_RESULT_SUCC	public.h	/^	NPTO_PARSE_RESULT_SUCC = 0,$/;"	e	enum:__anon4
+NPTO_PARSE_RESULT_TOSMALL	public.h	/^	NPTO_PARSE_RESULT_TOSMALL,       \/\/ 数据没有接收全$/;"	e	enum:__anon4
+NPTO_PARSE_RESULT_UNKNOWN	public.h	/^	NPTO_PARSE_RESULT_UNKNOWN,$/;"	e	enum:__anon4
 NetProto	public.h	/^}NetProto, *NetPtoPtr;$/;"	t	typeref:struct:tagNETPROTOCOL
 NetPtoPtr	public.h	/^}NetProto, *NetPtoPtr;$/;"	t	typeref:struct:tagNETPROTOCOL
-OBJS	Makefile	/^OBJS=rs232.o main.o param.o SerialIo.o$/;"	m
+OBJS	Makefile	/^OBJS=rs232.o main.o param.o SerialIo.o misc.o process_cmd.o NetParser.o NetIo.o $/;"	m
 OpenCom	rs232.c	/^int OpenCom( const char *deviceName, long baudRate, int parity,$/;"	f
 PBATR	printdef.h	118;"	d
 PBATR	printdef.h	95;"	d
@@ -56,6 +65,7 @@ PNES	printdef.h	116;"	d
 PNET	printdef.h	115;"	d
 PNETR	printdef.h	78;"	d
 PNETS	printdef.h	87;"	d
+POLY	NetParser.c	21;"	d	file:
 PRINT_ASSERT	printdef.h	27;"	d
 PRINT_DEBUG	printdef.h	25;"	d
 PRINT_ERROR	printdef.h	23;"	d
@@ -63,14 +73,17 @@ PRINT_FUNC	printdef.h	24;"	d
 PRINT_MESSG	printdef.h	26;"	d
 PRINT_PRONAME	printdef.h	29;"	d
 PRINT_TIME	printdef.h	22;"	d
+PROCESS_CMD	process_cmd.c	/^struct PROCESS_CMD{$/;"	s	file:
 PVERSION	printdef.h	51;"	d
 ParamInfo	public.h	/^}ParamInfo, *PrmIPtr;$/;"	t	typeref:struct:tagPROGPARAM
 PrmIPtr	public.h	/^}ParamInfo, *PrmIPtr;$/;"	t	typeref:struct:tagPROGPARAM
 ProgIPtr	public.h	/^}ProgInfo, *ProgIPtr;$/;"	t	typeref:struct:tagPROGINFO
 ProgInfo	public.h	/^}ProgInfo, *ProgIPtr;$/;"	t	typeref:struct:tagPROGINFO
+SER_NUM	public.h	47;"	d
 STATE_MCU_VER	public.h	/^	STATE_MCU_VER,$/;"	e	enum:__anon2
 STATE_NULL	public.h	/^	STATE_NULL = 0,$/;"	e	enum:__anon2
 STATE_UPGRADE	public.h	/^	STATE_UPGRADE,$/;"	e	enum:__anon2
+SendSerialCmd	process_cmd.c	/^int SendSerialCmd(ProgIPtr prog, int command, unsigned char *extdat, int extlen)$/;"	f
 UserIPtr	public.h	/^}UserInfo, *UserIPtr;$/;"	t	typeref:struct:tagUSERINFO
 UserInfo	public.h	/^}UserInfo, *UserIPtr;$/;"	t	typeref:struct:tagUSERINFO
 __PRINTDEF_DEF_H	printdef.h	20;"	d
@@ -79,33 +92,57 @@ __RS232_DEF_H	rs232.h	20;"	d
 _rev	public.h	/^	unsigned char _rev[3];$/;"	m	struct:tagPROGINFO
 checksum	public.h	/^	unsigned char  checksum;         \/\/ 将本字段设置为0时,所有INT之和取BYTE。$/;"	m	struct:tagNETPROTOCOL
 checksum	public.h	/^	unsigned int  checksum;$/;"	m	struct:tagPROGINFO
+cmd_num	process_cmd.c	/^	unsigned short cmd_num;$/;"	m	struct:PROCESS_CMD	file:
 cmdlen	public.h	/^	unsigned short cmdlen;           \/\/ 本条命令的长度$/;"	m	struct:tagNETPROTOCOL
 cmdseq	public.h	/^	unsigned short cmdseq;           \/\/ 命令序号，发送端标志，返回命令保持不变$/;"	m	struct:tagNETPROTOCOL
+command	process_cmd.c	/^	unsigned char command[MAX_CMD_NUM];$/;"	m	struct:PROCESS_CMD	file:
 command	public.h	/^	unsigned char  command;          \/\/ 命令字，命令字的最高位为1，表示反馈命令$/;"	m	struct:tagNETPROTOCOL
 dat	public.h	/^	unsigned char  dat[NPTO_MAX_SIZE-NPTO_HEAD_SIZE];$/;"	m	struct:tagNETPROTOCOL
 epollfd	public.h	/^	int           epollfd;$/;"	m	struct:tagPROGINFO
+err_connect	NetIo.c	/^static int err_connect(ProgIPtr prog, int n)$/;"	f	file:
 events	public.h	/^	struct        epoll_event events[EVENT_COUNT];$/;"	m	struct:tagPROGINFO	typeref:struct:tagPROGINFO::epoll_event
+fcmd_proc	process_cmd.c	/^typedef int (*fcmd_proc)(ProgIPtr prog, int n, NetPtoPtr pcmd);$/;"	t	file:
 fdListen	public.h	/^	int           fdListen;$/;"	m	struct:tagPROGINFO
 fp	public.h	/^	FILE          *fp;$/;"	m	struct:tagPROGINFO
 gProgInfo	main.c	/^ProgInfo gProgInfo;$/;"	v
 g_log_level	main.c	/^int g_log_level = 0x000F;$/;"	v
 g_rs232_dev	SerialIo.c	/^char g_rs232_dev[16];$/;"	v
+get_command	NetIo.c	/^static int get_command(ProgIPtr prog, int n, NetPtoPtr pcmd)$/;"	f	file:
 iExit	public.h	/^	int           iExit;$/;"	m	struct:tagPROGINFO
-iMainStatue	public.h	/^	unsigned char iMainStatue;$/;"	m	struct:tagPROGINFO
+iMainState	public.h	/^	unsigned char iMainState;$/;"	m	struct:tagPROGINFO
 lastheart	public.h	/^	time_t         lastheart;$/;"	m	struct:tagUSERINFO
 listport	public.h	/^	int           listport;$/;"	m	struct:tagPROGPARAM
 magic0	public.h	/^	unsigned char  magic0;           \/\/ 恒定为0xAA$/;"	m	struct:tagNETPROTOCOL
 magic1	public.h	/^	unsigned char  magic1;           \/\/ 恒定为0x55$/;"	m	struct:tagNETPROTOCOL
 main	main.c	/^int main(int argc, char *argv[])$/;"	f
+misc_current_time	misc.c	/^unsigned int misc_current_time(int bUpdate)$/;"	f
+misc_update_time	misc.c	/^unsigned int misc_update_time(void)$/;"	f
+msec	misc.c	/^	unsigned int msec;$/;"	m	struct:tagCURTIMEVAL	file:
 msecNow	public.h	/^	unsigned int  msecNow;$/;"	m	struct:tagPROGINFO
 msecSend	public.h	/^	unsigned int  msecSend;$/;"	m	struct:tagPROGINFO
+msec_cnt	misc.c	/^	unsigned int msec_cnt;$/;"	m	struct:tagCURTIMEVAL	file:
 name_arr	rs232.c	/^const int name_arr[] = {$/;"	v
 net_ip	public.h	/^	char          net_ip[24];$/;"	m	struct:tagPROGPARAM
 net_mac	public.h	/^	char          net_mac[24];$/;"	m	struct:tagPROGPARAM
+netio_create_tcpserver	NetIo.c	/^int netio_create_tcpserver(ProgIPtr prog)$/;"	f
+netio_main_tcpserver	NetIo.c	/^int netio_main_tcpserver(ProgIPtr prog)$/;"	f
+new_connect	NetIo.c	/^static int new_connect(ProgIPtr prog)$/;"	f	file:
+npto_CRC	NetParser.c	/^int npto_CRC(void *src, int ilen)$/;"	f
+npto_GenerateRaw	NetParser.c	/^int npto_GenerateRaw(void *obuf, int *olen, int cmd, unsigned int cmdseq,$/;"	f
+npto_Parse	NetParser.c	/^int npto_Parse(void *src, int ilen, NetPtoPtr cmdPkt, int *olen, int *result)$/;"	f
 param	public.h	/^	ParamInfo     param;$/;"	m	struct:tagPROGINFO
+prm_Default	param.c	/^int prm_Default(ParamInfo *pinfo)$/;"	f
 prm_SetBoard	param.c	/^int prm_SetBoard(ParamInfo *pinfo)$/;"	f
+proc_cmd	process_cmd.c	/^}proc_cmd;$/;"	v	typeref:struct:PROCESS_CMD
+proc_mcu_version	process_cmd.c	/^static int proc_mcu_version(ProgIPtr prog, int n, NetPtoPtr pcmd)$/;"	f	file:
+process_cmd	process_cmd.c	/^	fcmd_proc process_cmd[MAX_CMD_NUM];$/;"	m	struct:PROCESS_CMD	file:
+process_command	process_cmd.c	/^int process_command(ProgIPtr prog, int n, NetPtoPtr pcmd)$/;"	f
 recvBuf	public.h	/^	unsigned char  recvBuf[MAX_BUFFER_SIZE];$/;"	m	struct:tagUSERINFO
 recvLen	public.h	/^	unsigned short recvLen, verified;$/;"	m	struct:tagUSERINFO
+recv_data	NetIo.c	/^static int recv_data(ProgIPtr prog, int n)$/;"	f	file:
+reg_cmd_proc	process_cmd.c	/^static void reg_cmd_proc(unsigned char command, fcmd_proc fproc)$/;"	f	file:
+register_all_command	process_cmd.c	/^void register_all_command(void)$/;"	f
+sec	misc.c	/^	unsigned int sec;$/;"	m	struct:tagCURTIMEVAL	file:
 sendBuf	public.h	/^	unsigned char sendBuf[MAX_BUFFER_SIZE];$/;"	m	struct:tagPROGINFO
 sendBufLen	public.h	/^	int           sendBufLen;$/;"	m	struct:tagPROGINFO
 sendseq	public.h	/^	int           sendseq;$/;"	m	struct:tagPROGINFO
@@ -119,6 +156,8 @@ sn	public.h	/^	char          sn[36];$/;"	m	struct:tagPROGPARAM
 sockfd	public.h	/^	int           sockfd;$/;"	m	struct:tagUSERINFO
 speed_arr	rs232.c	/^const int speed_arr[] = {$/;"	v
 sumsize	public.h	/^	unsigned int  sumsize;$/;"	m	struct:tagPROGINFO
+systime	misc.c	/^}systime;$/;"	v	typeref:struct:tagCURTIMEVAL
+tagCURTIMEVAL	misc.c	/^struct tagCURTIMEVAL{$/;"	s	file:
 tagNETPROTOCOL	public.h	/^typedef struct tagNETPROTOCOL {$/;"	s
 tagPROGINFO	public.h	/^typedef struct tagPROGINFO{$/;"	s
 tagPROGPARAM	public.h	/^typedef struct tagPROGPARAM{$/;"	s
